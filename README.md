@@ -17,6 +17,7 @@ Run the app instantly, with no installation needed (Presets not included):
 If you prefer running the app locally without Node.js:
 1. Open the **`dist`** folder in this repository.
 2. Launch **`index.html`** directly in your browser.
+3. Download and add presets from **`dist`** folder.
 
 *(For development or making changes, see the “Getting Started” section.)*
 
