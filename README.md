@@ -8,10 +8,17 @@
 ![Tech Stack](https://img.shields.io/badge/Stack-React_|_Vite_|_TypeScript-blue)
 
 ## ⚡ Quick Run (No Installation Required)
-For a quick demo without installing Node.js:
-1. Navigate to the **`dist`** folder in this repository.
-2. Open **`index.html`** in your browser.
-*(Note: To develop or make changes, see the [Getting Started](#-getting-started) section below)*
+
+### **1. Live Demo (Recommended)**
+Run the app instantly, with no installation needed:  
+👉 **https://serene-treacle-ad46e0.netlify.app/**
+
+### **2. Local Alternative**
+If you prefer running the app locally without Node.js:
+1. Open the **`dist`** folder in this repository.
+2. Launch **`index.html`** directly in your browser.
+
+*(For development or making changes, see the “Getting Started” section.)*
 
 ---
 
