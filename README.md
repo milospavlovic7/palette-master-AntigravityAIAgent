@@ -10,7 +10,7 @@
 ## ⚡ Quick Run (No Installation Required)
 
 ### **1. Live Demo (Recommended)**
-Run the app instantly, with no installation needed:  
+Run the app instantly, with no installation needed (Presets not included):  
 👉 **https://serene-treacle-ad46e0.netlify.app/**
 
 ### **2. Local Alternative**
