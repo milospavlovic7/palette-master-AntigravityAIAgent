@@ -1,0 +1,4006 @@
+[
+  {
+    "id": "1764598598006",
+    "name": "Comic Atkinson",
+    "effects": [
+      {
+        "id": "9ec9cd4b-89be-4d24-ae97-bc265c42a97e",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "data": {
+          "scale": 1
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "e7c5b0c0-0fc8-4c63-87fb-eec14b5fc0ea",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "data": {
+          "colors": [
+            {
+              "id": "bc864cc1-d115-4b59-9e8b-11b68d40b09d",
+              "hex": "#0c0d08",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "e6603378-a182-49df-a53f-80d970326ca9",
+              "hex": "#5d1414",
+              "weight": 100,
+              "stop": 39.63414634146341
+            },
+            {
+              "id": "66941ac5-c526-42b5-a7ae-50f8fa6d36aa",
+              "hex": "#426fb8",
+              "weight": 100,
+              "stop": 48.606271777003485
+            },
+            {
+              "id": "9f90866e-99f3-42b8-9d2a-088b5d52b833",
+              "hex": "#8c9b8c",
+              "weight": 100,
+              "stop": 64.19860627177701
+            },
+            {
+              "id": "d02eb44d-ec4e-4d20-9e72-1fffe8eaaba5",
+              "hex": "#f3f4f1",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "ab2a5af4-e6bd-47b8-ade3-47482a714a0d",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "data": {
+          "method": "atkinson",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 2,
+          "scale": 1
+        },
+        "isEnabled": true
+      }
+    ]
+  },
+  {
+    "id": "1764598627214",
+    "name": "Cluncky Dither",
+    "effects": [
+      {
+        "id": "2f725fed-4c87-4ddb-8a95-6f86da85577c",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "data": {
+          "scale": 0.5
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "517c06e6-f26b-40ae-8654-35c678225aa7",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "data": {
+          "method": "atkinson",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 5,
+          "scale": 1
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "ea760912-8768-427c-9abe-97ca57f1e897",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "data": {
+          "colors": [
+            {
+              "id": "bc864cc1-d115-4b59-9e8b-11b68d40b09d",
+              "hex": "#0c0d08",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "e6603378-a182-49df-a53f-80d970326ca9",
+              "hex": "#5d1414",
+              "weight": 100,
+              "stop": 39.63414634146341
+            },
+            {
+              "id": "66941ac5-c526-42b5-a7ae-50f8fa6d36aa",
+              "hex": "#426fb8",
+              "weight": 100,
+              "stop": 48.606271777003485
+            },
+            {
+              "id": "9f90866e-99f3-42b8-9d2a-088b5d52b833",
+              "hex": "#8c9b8c",
+              "weight": 100,
+              "stop": 64.19860627177701
+            },
+            {
+              "id": "d02eb44d-ec4e-4d20-9e72-1fffe8eaaba5",
+              "hex": "#f3f4f1",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "16b862ec-09d7-4660-ab6e-deb85a5f4c93",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "data": {
+          "scale": 2
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "75837a8c-9f58-4b5f-b9fa-20f1b0bf8f74",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": true,
+        "data": {
+          "strength": 100,
+          "threshold": 30,
+          "iterations": 4
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "79009ee7-b771-4d3e-9a5a-2e141365fa24",
+        "type": "sharpen",
+        "name": "Sharpen",
+        "isCollapsed": true,
+        "data": {
+          "amount": 20
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "ce09a7d3-d893-444b-b894-bf1f62b0bf10",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "data": {
+          "method": "noise",
+          "strength": 35,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 9,
+          "scale": 1
+        },
+        "isEnabled": true
+      }
+    ]
+  },
+  {
+    "id": "1764599318399",
+    "name": "Cyberpunk Bayer",
+    "effects": [
+      {
+        "id": "aaf2bab4-cb59-4776-a579-e9962217de11",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 0.5
+        }
+      },
+      {
+        "id": "11902dfb-9338-41d6-bfb9-e6ec346fcb15",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "bayer-8x8",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 4,
+          "scale": 1
+        }
+      },
+      {
+        "id": "ad65c0d2-386b-40fb-94c1-69a58d993f4a",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "16856b3a-a53b-4ec8-a89e-7b445e410bac",
+              "hex": "#1b1d22",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "8c4c3053-5481-4e19-b806-694f9b49d3d9",
+              "hex": "#363659",
+              "weight": 100,
+              "stop": 33.01393728222996
+            },
+            {
+              "id": "73ba8e05-af7a-4885-af84-170d700dd00e",
+              "hex": "#941d19",
+              "weight": 100,
+              "stop": 51.045296167247386
+            },
+            {
+              "id": "6344bbdb-a397-4fc6-82cc-6163336042ee",
+              "hex": "#a82b1a",
+              "weight": 100,
+              "stop": 91.02787456445992
+            },
+            {
+              "id": "a7617c26-9960-453e-ab20-218a4042fac6",
+              "hex": "#b3751e",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "513f01a7-2afe-4fa8-b92d-dd7288749ecf",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 2
+        }
+      },
+      {
+        "id": "b42a7a15-5074-441a-9aff-efb80bfc1ef7",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "strength": 100,
+          "threshold": 24,
+          "iterations": 2
+        }
+      },
+      {
+        "id": "7f514627-1bd6-4531-abb0-3384449ccc1f",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "blue-noise",
+          "strength": 15,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 7,
+          "scale": 1
+        }
+      },
+      {
+        "id": "be69d5cd-8e97-4809-802b-17305893bf44",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 0,
+          "contrast": 16
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764599546063",
+    "name": "Cyberpunk Bayer 2",
+    "effects": [
+      {
+        "id": "aaf2bab4-cb59-4776-a579-e9962217de11",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 0.5
+        }
+      },
+      {
+        "id": "11902dfb-9338-41d6-bfb9-e6ec346fcb15",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "bayer-8x8",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 4,
+          "scale": 1
+        }
+      },
+      {
+        "id": "ad65c0d2-386b-40fb-94c1-69a58d993f4a",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "16856b3a-a53b-4ec8-a89e-7b445e410bac",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "8c4c3053-5481-4e19-b806-694f9b49d3d9",
+              "hex": "#363659",
+              "weight": 100,
+              "stop": 41.37630662020905
+            },
+            {
+              "id": "73ba8e05-af7a-4885-af84-170d700dd00e",
+              "hex": "#95211d",
+              "weight": 100,
+              "stop": 56.27177700348432
+            },
+            {
+              "id": "6344bbdb-a397-4fc6-82cc-6163336042ee",
+              "hex": "#c2311e",
+              "weight": 100,
+              "stop": 72.90940766550521
+            },
+            {
+              "id": "a7617c26-9960-453e-ab20-218a4042fac6",
+              "hex": "#ffa629",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "513f01a7-2afe-4fa8-b92d-dd7288749ecf",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 2
+        }
+      },
+      {
+        "id": "b42a7a15-5074-441a-9aff-efb80bfc1ef7",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": false,
+        "isEnabled": true,
+        "data": {
+          "strength": 100,
+          "threshold": 0,
+          "iterations": 4
+        }
+      },
+      {
+        "id": "7f514627-1bd6-4531-abb0-3384449ccc1f",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "blue-noise",
+          "strength": 15,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 7,
+          "scale": 1
+        }
+      },
+      {
+        "id": "be69d5cd-8e97-4809-802b-17305893bf44",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 0,
+          "contrast": 16
+        }
+      },
+      {
+        "id": "e139f71f-41d2-48c9-8437-85c7fd1fbae0",
+        "type": "sharpen",
+        "name": "Sharpen",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "amount": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764599918248",
+    "name": "NoFilter Dither",
+    "effects": [
+      {
+        "id": "aaf2bab4-cb59-4776-a579-e9962217de11",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 0.5
+        }
+      },
+      {
+        "id": "11902dfb-9338-41d6-bfb9-e6ec346fcb15",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "bayer-8x8",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 4,
+          "scale": 1
+        }
+      },
+      {
+        "id": "ad65c0d2-386b-40fb-94c1-69a58d993f4a",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": false,
+        "data": {
+          "colors": [
+            {
+              "id": "16856b3a-a53b-4ec8-a89e-7b445e410bac",
+              "hex": "#0f0000",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "8c4c3053-5481-4e19-b806-694f9b49d3d9",
+              "hex": "#563659",
+              "weight": 100,
+              "stop": 41.37630662020905
+            },
+            {
+              "id": "73ba8e05-af7a-4885-af84-170d700dd00e",
+              "hex": "#a0702c",
+              "weight": 100,
+              "stop": 56.27177700348432
+            },
+            {
+              "id": "6344bbdb-a397-4fc6-82cc-6163336042ee",
+              "hex": "#ff1e00",
+              "weight": 100,
+              "stop": 72.90940766550521
+            },
+            {
+              "id": "a7617c26-9960-453e-ab20-218a4042fac6",
+              "hex": "#d4ff00",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "513f01a7-2afe-4fa8-b92d-dd7288749ecf",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 2
+        }
+      },
+      {
+        "id": "b42a7a15-5074-441a-9aff-efb80bfc1ef7",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "strength": 100,
+          "threshold": 2,
+          "iterations": 4
+        }
+      },
+      {
+        "id": "7f514627-1bd6-4531-abb0-3384449ccc1f",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "noise",
+          "strength": 24,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 7,
+          "scale": 1
+        }
+      },
+      {
+        "id": "be69d5cd-8e97-4809-802b-17305893bf44",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 0,
+          "contrast": 39
+        }
+      },
+      {
+        "id": "e139f71f-41d2-48c9-8437-85c7fd1fbae0",
+        "type": "sharpen",
+        "name": "Sharpen",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "amount": 77
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764600238399",
+    "name": "Atkinson Cartoon",
+    "effects": [
+      {
+        "id": "aaf2bab4-cb59-4776-a579-e9962217de11",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 0.5
+        }
+      },
+      {
+        "id": "11902dfb-9338-41d6-bfb9-e6ec346fcb15",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "atkinson",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 7,
+          "scale": 1
+        }
+      },
+      {
+        "id": "ad65c0d2-386b-40fb-94c1-69a58d993f4a",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": false,
+        "data": {
+          "colors": [
+            {
+              "id": "16856b3a-a53b-4ec8-a89e-7b445e410bac",
+              "hex": "#0f0000",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "8c4c3053-5481-4e19-b806-694f9b49d3d9",
+              "hex": "#563659",
+              "weight": 100,
+              "stop": 41.37630662020905
+            },
+            {
+              "id": "73ba8e05-af7a-4885-af84-170d700dd00e",
+              "hex": "#a0702c",
+              "weight": 100,
+              "stop": 56.27177700348432
+            },
+            {
+              "id": "6344bbdb-a397-4fc6-82cc-6163336042ee",
+              "hex": "#ff1e00",
+              "weight": 100,
+              "stop": 72.90940766550521
+            },
+            {
+              "id": "a7617c26-9960-453e-ab20-218a4042fac6",
+              "hex": "#d4ff00",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "513f01a7-2afe-4fa8-b92d-dd7288749ecf",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 2
+        }
+      },
+      {
+        "id": "b42a7a15-5074-441a-9aff-efb80bfc1ef7",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "strength": 36,
+          "threshold": 13,
+          "iterations": 4
+        }
+      },
+      {
+        "id": "7f514627-1bd6-4531-abb0-3384449ccc1f",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "noise",
+          "strength": 24,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 7,
+          "scale": 1
+        }
+      },
+      {
+        "id": "be69d5cd-8e97-4809-802b-17305893bf44",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 0,
+          "contrast": 53
+        }
+      },
+      {
+        "id": "e139f71f-41d2-48c9-8437-85c7fd1fbae0",
+        "type": "sharpen",
+        "name": "Sharpen",
+        "isCollapsed": true,
+        "isEnabled": false,
+        "data": {
+          "amount": 77
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764600658537",
+    "name": "Cyberpunk Bayer 3",
+    "effects": [
+      {
+        "id": "ad409d35-a9e9-434f-8d10-b87ca2f5211c",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 0.5
+        }
+      },
+      {
+        "id": "5bbd7d5b-f473-4474-974a-41f4148d4e47",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "bayer-8x8",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 4,
+          "scale": 1
+        }
+      },
+      {
+        "id": "4d9e781c-cbcd-4936-b1e0-59a75d45ea61",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": false,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "16856b3a-a53b-4ec8-a89e-7b445e410bac",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "8c4c3053-5481-4e19-b806-694f9b49d3d9",
+              "hex": "#363659",
+              "weight": 100,
+              "stop": 21.167247386759573
+            },
+            {
+              "id": "73ba8e05-af7a-4885-af84-170d700dd00e",
+              "hex": "#951d41",
+              "weight": 100,
+              "stop": 46.16724738675958
+            },
+            {
+              "id": "6344bbdb-a397-4fc6-82cc-6163336042ee",
+              "hex": "#c2311e",
+              "weight": 100,
+              "stop": 72.90940766550521
+            },
+            {
+              "id": "a7617c26-9960-453e-ab20-218a4042fac6",
+              "hex": "#ffc72e",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "46b1310a-8f80-4dc2-b060-392ba40d04a0",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 2
+        }
+      },
+      {
+        "id": "70c8ea17-a7e7-4a3f-9030-4f20037c9fed",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": false,
+        "isEnabled": true,
+        "data": {
+          "strength": 13,
+          "threshold": 0,
+          "iterations": 4
+        }
+      },
+      {
+        "id": "6e519169-9d30-4215-b666-5a9f6c7e84db",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "blue-noise",
+          "strength": 15,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 7,
+          "scale": 1
+        }
+      },
+      {
+        "id": "517eab41-4256-4ca2-a65f-488bc5ccaa79",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 0,
+          "contrast": 16
+        }
+      },
+      {
+        "id": "ce86dd95-8e8d-49ff-a2bd-56409785cf3e",
+        "type": "sharpen",
+        "name": "Sharpen",
+        "isCollapsed": true,
+        "isEnabled": false,
+        "data": {
+          "amount": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764604785305",
+    "name": "Cyberpunk Bayer 4",
+    "effects": [
+      {
+        "id": "ad409d35-a9e9-434f-8d10-b87ca2f5211c",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 0.5
+        }
+      },
+      {
+        "id": "5bbd7d5b-f473-4474-974a-41f4148d4e47",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "bayer-8x8",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 4,
+          "scale": 1
+        }
+      },
+      {
+        "id": "4d9e781c-cbcd-4936-b1e0-59a75d45ea61",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "16856b3a-a53b-4ec8-a89e-7b445e410bac",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "8c4c3053-5481-4e19-b806-694f9b49d3d9",
+              "hex": "#363659",
+              "weight": 100,
+              "stop": 21.167247386759573
+            },
+            {
+              "id": "73ba8e05-af7a-4885-af84-170d700dd00e",
+              "hex": "#951d41",
+              "weight": 100,
+              "stop": 46.16724738675958
+            },
+            {
+              "id": "6344bbdb-a397-4fc6-82cc-6163336042ee",
+              "hex": "#c2311e",
+              "weight": 100,
+              "stop": 72.90940766550521
+            },
+            {
+              "id": "a7617c26-9960-453e-ab20-218a4042fac6",
+              "hex": "#ffc72e",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "46b1310a-8f80-4dc2-b060-392ba40d04a0",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 2
+        }
+      },
+      {
+        "id": "70c8ea17-a7e7-4a3f-9030-4f20037c9fed",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "strength": 93,
+          "threshold": 0,
+          "iterations": 4
+        }
+      },
+      {
+        "id": "6e519169-9d30-4215-b666-5a9f6c7e84db",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "blue-noise",
+          "strength": 15,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 7,
+          "scale": 1
+        }
+      },
+      {
+        "id": "517eab41-4256-4ca2-a65f-488bc5ccaa79",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 0,
+          "contrast": 16
+        }
+      },
+      {
+        "id": "ce86dd95-8e8d-49ff-a2bd-56409785cf3e",
+        "type": "sharpen",
+        "name": "Sharpen",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "amount": 100,
+          "method": "unsharp-mask",
+          "radius": 8,
+          "threshold": 97
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764605482725",
+    "name": "Ancient Diffusion",
+    "effects": [
+      {
+        "id": "da662d51-293b-4f17-87cf-b52cc986fa26",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 1
+        }
+      },
+      {
+        "id": "db7f5ecd-3dd3-44dd-8299-30cd751558d9",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "error-diffusion-1d",
+          "strength": 47,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 2,
+          "scale": 1
+        }
+      },
+      {
+        "id": "66275ec3-320e-4342-b1bf-fc33842e08cf",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": false,
+        "data": {
+          "colors": [
+            {
+              "id": "16856b3a-a53b-4ec8-a89e-7b445e410bac",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "8c4c3053-5481-4e19-b806-694f9b49d3d9",
+              "hex": "#363659",
+              "weight": 100,
+              "stop": 31.271777003484313
+            },
+            {
+              "id": "73ba8e05-af7a-4885-af84-170d700dd00e",
+              "hex": "#3d1d95",
+              "weight": 100,
+              "stop": 50.348432055749115
+            },
+            {
+              "id": "6344bbdb-a397-4fc6-82cc-6163336042ee",
+              "hex": "#21c21e",
+              "weight": 100,
+              "stop": 89.28571428571428
+            },
+            {
+              "id": "a7617c26-9960-453e-ab20-218a4042fac6",
+              "hex": "#7affc1",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "d47166c5-3f05-4b0b-974c-3059522634b9",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 2
+        }
+      },
+      {
+        "id": "aff1a5df-3585-4b79-9318-2e6a01706c51",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "strength": 93,
+          "threshold": 0,
+          "iterations": 4
+        }
+      },
+      {
+        "id": "13b8c6a6-dd21-412b-a851-229c3172d2bb",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "blue-noise",
+          "strength": 15,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 7,
+          "scale": 1
+        }
+      },
+      {
+        "id": "d6604073-d48d-4b78-b628-58e03a2576aa",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 0,
+          "contrast": 16
+        }
+      },
+      {
+        "id": "06ffa48f-9478-4ff9-a875-9ea98abfa791",
+        "type": "sharpen",
+        "name": "Sharpen",
+        "isCollapsed": true,
+        "isEnabled": false,
+        "data": {
+          "amount": 100,
+          "method": "unsharp-mask",
+          "radius": 8,
+          "threshold": 97
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764605772329",
+    "name": "Ancient Diffusion 2",
+    "effects": [
+      {
+        "id": "228616d7-35a6-4373-9047-4804350038f3",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 1
+        }
+      },
+      {
+        "id": "9f8fa8ad-d072-418a-b370-dd25b0181ded",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "error-diffusion-1d",
+          "strength": 47,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 2,
+          "scale": 1
+        }
+      },
+      {
+        "id": "656b7e26-07cc-4c2c-a0b8-e7c1eea8f11f",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "5beed621-133a-4871-a515-9f6e40e50f20",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "4e3a8111-a8ad-488a-9bcc-4916bc0cf117",
+              "hex": "#090909",
+              "weight": 100,
+              "stop": 16.666666666666664
+            },
+            {
+              "id": "3c2c01f3-09f0-4512-b4a7-641653324022",
+              "hex": "#101010",
+              "weight": 100,
+              "stop": 33.33333333333333
+            },
+            {
+              "id": "916a02ca-edf7-481c-96bb-adc0f32a98ef",
+              "hex": "#1c1c1c",
+              "weight": 100,
+              "stop": 50
+            },
+            {
+              "id": "a9b0f447-1887-4583-88a9-62e6443f2aac",
+              "hex": "#383838",
+              "weight": 100,
+              "stop": 66.66666666666666
+            },
+            {
+              "id": "cbfab0da-490f-4c56-bc33-c06b9aaff32a",
+              "hex": "#757eff",
+              "weight": 100,
+              "stop": 83.33333333333334
+            },
+            {
+              "id": "790b06df-0960-4164-a71d-72c1dfd4711e",
+              "hex": "#ffffff",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "62754713-7c22-4966-b96f-9884a8552d6b",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 2
+        }
+      },
+      {
+        "id": "73c4849c-72c1-43c0-a4dd-1a801186eff5",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "strength": 93,
+          "threshold": 0,
+          "iterations": 4
+        }
+      },
+      {
+        "id": "4298cbdd-f64b-4aee-843b-69d38c019bdb",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "blue-noise",
+          "strength": 15,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 7,
+          "scale": 1
+        }
+      },
+      {
+        "id": "3198a2b0-3e84-4160-b733-d300f66e4df7",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 0,
+          "contrast": 16
+        }
+      },
+      {
+        "id": "0873dbcd-f2e4-4311-b5ce-84e8f26c8e2b",
+        "type": "sharpen",
+        "name": "Sharpen",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "amount": 100,
+          "method": "unsharp-mask",
+          "radius": 8,
+          "threshold": 97
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764606418546",
+    "name": "Pixel Sort Chaos",
+    "effects": [
+      {
+        "id": "ac9bfbcd-5f8f-4b41-9528-7b6d93b99841",
+        "type": "pixel-sort",
+        "name": "Pixel Sort",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "saturation",
+          "direction": "horizontal",
+          "thresholdLow": 18,
+          "thresholdHigh": 75,
+          "reverse": true
+        }
+      },
+      {
+        "id": "da914613-1f9e-4294-be71-682d7f893e00",
+        "type": "pixel-sort",
+        "name": "Pixel Sort",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "brightness",
+          "direction": "horizontal",
+          "thresholdLow": 36,
+          "thresholdHigh": 49,
+          "reverse": true
+        }
+      },
+      {
+        "id": "61b6d98a-f884-44a6-818b-ff441ce848c5",
+        "type": "pixel-sort",
+        "name": "Pixel Sort",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "intensity",
+          "direction": "vertical",
+          "thresholdLow": 46,
+          "thresholdHigh": 75,
+          "reverse": false
+        }
+      },
+      {
+        "id": "b10a2ce8-0e79-4814-bb5e-2753c9599030",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 0.5
+        }
+      },
+      {
+        "id": "72d7b895-966a-46c3-b838-34fe5b783d9e",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "error-diffusion-1d",
+          "strength": 56,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 4,
+          "scale": 1
+        }
+      },
+      {
+        "id": "711776b2-21ad-4d7e-9c0a-3479fe0dd94a",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 0,
+          "contrast": 22
+        }
+      },
+      {
+        "id": "e19bd25a-2c1d-4ad8-bd45-2921034bcdcf",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "strength": 26,
+          "threshold": 21,
+          "iterations": 1
+        }
+      },
+      {
+        "id": "8ea7b145-4d59-4f6d-abb7-9412e54ad810",
+        "type": "sharpen",
+        "name": "Sharpen",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "standard",
+          "amount": 12,
+          "radius": 2,
+          "threshold": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764606587746",
+    "name": "Pixel Sort Dark",
+    "effects": [
+      {
+        "id": "ac9bfbcd-5f8f-4b41-9528-7b6d93b99841",
+        "type": "pixel-sort",
+        "name": "Pixel Sort",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "saturation",
+          "direction": "horizontal",
+          "thresholdLow": 18,
+          "thresholdHigh": 75,
+          "reverse": true
+        }
+      },
+      {
+        "id": "da914613-1f9e-4294-be71-682d7f893e00",
+        "type": "pixel-sort",
+        "name": "Pixel Sort",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "brightness",
+          "direction": "horizontal",
+          "thresholdLow": 36,
+          "thresholdHigh": 49,
+          "reverse": true
+        }
+      },
+      {
+        "id": "61b6d98a-f884-44a6-818b-ff441ce848c5",
+        "type": "pixel-sort",
+        "name": "Pixel Sort",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "intensity",
+          "direction": "vertical",
+          "thresholdLow": 46,
+          "thresholdHigh": 75,
+          "reverse": false
+        }
+      },
+      {
+        "id": "b10a2ce8-0e79-4814-bb5e-2753c9599030",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 0.5
+        }
+      },
+      {
+        "id": "72d7b895-966a-46c3-b838-34fe5b783d9e",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "error-diffusion-1d",
+          "strength": 56,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 4,
+          "scale": 1
+        }
+      },
+      {
+        "id": "711776b2-21ad-4d7e-9c0a-3479fe0dd94a",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 0,
+          "contrast": 22
+        }
+      },
+      {
+        "id": "e19bd25a-2c1d-4ad8-bd45-2921034bcdcf",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": false,
+        "isEnabled": true,
+        "data": {
+          "strength": 79,
+          "threshold": 32,
+          "iterations": 1
+        }
+      },
+      {
+        "id": "8ea7b145-4d59-4f6d-abb7-9412e54ad810",
+        "type": "sharpen",
+        "name": "Sharpen",
+        "isCollapsed": true,
+        "isEnabled": false,
+        "data": {
+          "method": "standard",
+          "amount": 12,
+          "radius": 2,
+          "threshold": 0
+        }
+      },
+      {
+        "id": "50a4bcc9-a50b-4370-a789-6cc02838308f",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "97a8168c-4ed2-44db-8305-2e11c38e33bd",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "9ffbac46-8996-459f-9141-8c0b8b9d280f",
+              "hex": "#101010",
+              "weight": 100,
+              "stop": 20.942028985507246
+            },
+            {
+              "id": "1bf0eb6b-ea3a-4020-aa2a-6f669b380699",
+              "hex": "#1c1c1c",
+              "weight": 100,
+              "stop": 41.30434782608695
+            },
+            {
+              "id": "98ce1bd3-165d-413a-8dd2-bf004fe2d155",
+              "hex": "#383838",
+              "weight": 100,
+              "stop": 71.23188405797102
+            },
+            {
+              "id": "8e1f3f5a-7266-4fe8-b05c-937335d7add7",
+              "hex": "#b0b0b0",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764607839874",
+    "name": "Init",
+    "effects": [
+      {
+        "id": "d2b9df85-4077-4c6e-a5cf-c96ec60a8ca2",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764607962922",
+    "name": "Halftone Basic",
+    "effects": [
+      {
+        "id": "2ee1f3e1-8f49-4f13-95d2-a116b486e4b6",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 1
+        }
+      },
+      {
+        "id": "383d33f8-b00f-4fbe-b6cf-80c0a7c0adc3",
+        "type": "halftone",
+        "name": "Halftone",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "shape": "circle",
+          "size": 7,
+          "angle": 161,
+          "contrast": 4.8,
+          "colorMode": "mono"
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764608524332",
+    "name": "Comic Bayer",
+    "effects": [
+      {
+        "id": "c0c7f3b8-2c26-445e-8b51-1d89f7b8b249",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "data": {
+          "scale": 0.5
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "5756c8ad-12f0-4fab-87f3-3f22d30a99a0",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "887a369f-b3ff-4351-9e7e-99dd89d7c907",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "9a1a616f-07c7-4474-a45b-011918124bca",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 12.643678160919537
+            },
+            {
+              "id": "466d2670-6e12-48b7-929b-f5c1777cc574",
+              "hex": "#212121",
+              "weight": 100,
+              "stop": 27.29885057471264
+            },
+            {
+              "id": "cf2c9c0a-e0af-47b6-96ca-6797d869af72",
+              "hex": "#5e5e5e",
+              "weight": 100,
+              "stop": 37.06896551724138
+            },
+            {
+              "id": "ae2745b7-7324-4d54-9381-3be0d9a08d85",
+              "hex": "#cccccc",
+              "weight": 100,
+              "stop": 59.77011494252873
+            },
+            {
+              "id": "0efc520d-de33-4013-8202-c99dfbab5fcf",
+              "hex": "#ffffff",
+              "weight": 100,
+              "stop": 83.62068965517241
+            },
+            {
+              "id": "21a10a75-42fa-40d3-b3ba-d3f965369a63",
+              "hex": "#ffffff",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "7a48bea6-2fba-4fe1-8531-950d7a7090df",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "data": {
+          "method": "bayer-8x8",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 2,
+          "scale": 1
+        },
+        "isEnabled": true
+      }
+    ]
+  },
+  {
+    "id": "1764609358931",
+    "name": "Comic Bayer 2",
+    "effects": [
+      {
+        "id": "3bd5bf81-6de2-4521-8e15-519bf067385a",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "data": {
+          "scale": 0.25
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "2e5b07b5-4430-470c-ad33-93ce7418bb7c",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "887a369f-b3ff-4351-9e7e-99dd89d7c907",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "9a1a616f-07c7-4474-a45b-011918124bca",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 33.04597701149425
+            },
+            {
+              "id": "466d2670-6e12-48b7-929b-f5c1777cc574",
+              "hex": "#212121",
+              "weight": 100,
+              "stop": 36.206896551724135
+            },
+            {
+              "id": "cf2c9c0a-e0af-47b6-96ca-6797d869af72",
+              "hex": "#5e5e5e",
+              "weight": 100,
+              "stop": 48.27586206896552
+            },
+            {
+              "id": "ae2745b7-7324-4d54-9381-3be0d9a08d85",
+              "hex": "#cccccc",
+              "weight": 100,
+              "stop": 66.37931034482757
+            },
+            {
+              "id": "0efc520d-de33-4013-8202-c99dfbab5fcf",
+              "hex": "#ffffff",
+              "weight": 100,
+              "stop": 83.62068965517241
+            },
+            {
+              "id": "21a10a75-42fa-40d3-b3ba-d3f965369a63",
+              "hex": "#ffffff",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "3d1d7a0d-1e8e-4817-a249-1d5b31bbc2b8",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": false,
+        "data": {
+          "method": "bayer-4x4",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 2,
+          "scale": 1
+        },
+        "isEnabled": true
+      }
+    ]
+  },
+  {
+    "id": "1764609464028",
+    "name": "Comic Bayer 3",
+    "effects": [
+      {
+        "id": "8a07ba03-aeef-4bd2-b6a4-7168d02230fa",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "data": {
+          "scale": 0.25
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "6af89318-9b89-4802-874b-f38275e021fd",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "887a369f-b3ff-4351-9e7e-99dd89d7c907",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "9a1a616f-07c7-4474-a45b-011918124bca",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 33.04597701149425
+            },
+            {
+              "id": "466d2670-6e12-48b7-929b-f5c1777cc574",
+              "hex": "#212121",
+              "weight": 100,
+              "stop": 36.206896551724135
+            },
+            {
+              "id": "cf2c9c0a-e0af-47b6-96ca-6797d869af72",
+              "hex": "#5e5e5e",
+              "weight": 100,
+              "stop": 48.27586206896552
+            },
+            {
+              "id": "ae2745b7-7324-4d54-9381-3be0d9a08d85",
+              "hex": "#cccccc",
+              "weight": 100,
+              "stop": 66.37931034482757
+            },
+            {
+              "id": "0efc520d-de33-4013-8202-c99dfbab5fcf",
+              "hex": "#ffffff",
+              "weight": 100,
+              "stop": 83.62068965517241
+            },
+            {
+              "id": "21a10a75-42fa-40d3-b3ba-d3f965369a63",
+              "hex": "#ffffff",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "4a0ca200-1f06-4135-9272-c2739e0f72bd",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "data": {
+          "method": "bayer-4x4",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 2,
+          "scale": 1
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "692ca423-32c7-4165-8886-fb9b3aabc6fb",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "strength": 100,
+          "threshold": 97,
+          "iterations": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764609653635",
+    "name": "Data Rain",
+    "effects": [
+      {
+        "id": "8a07ba03-aeef-4bd2-b6a4-7168d02230fa",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "data": {
+          "scale": 0.25
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "6af89318-9b89-4802-874b-f38275e021fd",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "887a369f-b3ff-4351-9e7e-99dd89d7c907",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "9a1a616f-07c7-4474-a45b-011918124bca",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 33.04597701149425
+            },
+            {
+              "id": "466d2670-6e12-48b7-929b-f5c1777cc574",
+              "hex": "#212121",
+              "weight": 100,
+              "stop": 36.206896551724135
+            },
+            {
+              "id": "cf2c9c0a-e0af-47b6-96ca-6797d869af72",
+              "hex": "#5e5e5e",
+              "weight": 100,
+              "stop": 48.27586206896552
+            },
+            {
+              "id": "ae2745b7-7324-4d54-9381-3be0d9a08d85",
+              "hex": "#cccccc",
+              "weight": 100,
+              "stop": 66.37931034482757
+            },
+            {
+              "id": "0efc520d-de33-4013-8202-c99dfbab5fcf",
+              "hex": "#ffffff",
+              "weight": 100,
+              "stop": 83.62068965517241
+            },
+            {
+              "id": "21a10a75-42fa-40d3-b3ba-d3f965369a63",
+              "hex": "#ffffff",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "4a0ca200-1f06-4135-9272-c2739e0f72bd",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "data": {
+          "method": "bayer-4x4",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 2,
+          "scale": 1
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "692ca423-32c7-4165-8886-fb9b3aabc6fb",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "strength": 100,
+          "threshold": 97,
+          "iterations": 4
+        }
+      },
+      {
+        "id": "5bdbcd84-5255-4bb1-a792-2191976de623",
+        "type": "datamosh",
+        "name": "Datamosh",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "smear",
+          "threshold": 83,
+          "strength": 53,
+          "blockSize": 8,
+          "angle": 90
+        }
+      },
+      {
+        "id": "99a999a5-3a30-4767-a44f-9d7dc66eb8a0",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764611510155",
+    "name": "Distort Dither",
+    "effects": [
+      {
+        "id": "fc03c259-e26e-4f1b-9803-cee7cf575090",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 1
+        }
+      },
+      {
+        "id": "a59b8c6d-10f0-4c53-9e62-f5b921deab44",
+        "type": "datamosh",
+        "name": "Datamosh",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "vector-warp",
+          "threshold": 100,
+          "strength": 62,
+          "blockSize": 13,
+          "angle": 180
+        }
+      },
+      {
+        "id": "57c50b19-d3f7-4dc2-910c-5135e739282a",
+        "type": "pixel-sort",
+        "name": "Pixel Sort",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "green",
+          "direction": "horizontal",
+          "thresholdLow": 25,
+          "thresholdHigh": 36,
+          "reverse": true
+        }
+      },
+      {
+        "id": "497443e3-44fa-46a7-82bc-b705998794bd",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "56f1dfd1-844a-498e-8d99-0e458d447aea",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "53c38d02-7492-45a0-b04b-13ccf17c02f7",
+              "hex": "#ffffff",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "190fc0db-4a6b-4179-b159-a73605f37628",
+        "type": "glow",
+        "name": "Glow",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "radius": 10,
+          "strength": 36,
+          "threshold": 58
+        }
+      },
+      {
+        "id": "ec5d6d2a-696f-4399-b917-63e5ba155ae5",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "atkinson",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 5,
+          "scale": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764611765923",
+    "name": "Distort Dither 2",
+    "effects": [
+      {
+        "id": "fc03c259-e26e-4f1b-9803-cee7cf575090",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": false,
+        "isEnabled": true,
+        "data": {
+          "scale": 1
+        }
+      },
+      {
+        "id": "a59b8c6d-10f0-4c53-9e62-f5b921deab44",
+        "type": "datamosh",
+        "name": "Datamosh",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "vector-warp",
+          "threshold": 100,
+          "strength": 75,
+          "blockSize": 10,
+          "angle": 180
+        }
+      },
+      {
+        "id": "57c50b19-d3f7-4dc2-910c-5135e739282a",
+        "type": "pixel-sort",
+        "name": "Pixel Sort",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "intensity",
+          "direction": "vertical",
+          "thresholdLow": 54,
+          "thresholdHigh": 81,
+          "reverse": false
+        }
+      },
+      {
+        "id": "190fc0db-4a6b-4179-b159-a73605f37628",
+        "type": "glow",
+        "name": "Glow",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "radius": 10,
+          "strength": 36,
+          "threshold": 58
+        }
+      },
+      {
+        "id": "32ce524c-ebb6-49d2-9d84-4b08e2f752bb",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "atkinson",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 6,
+          "scale": 1
+        }
+      },
+      {
+        "id": "88bc85e3-2b85-43bb-927e-517fe4c8d729",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 0,
+          "contrast": 38
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764611970836",
+    "name": "Distort Dither 3",
+    "effects": [
+      {
+        "id": "fc03c259-e26e-4f1b-9803-cee7cf575090",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 0.5
+        }
+      },
+      {
+        "id": "a59b8c6d-10f0-4c53-9e62-f5b921deab44",
+        "type": "datamosh",
+        "name": "Datamosh",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "vector-warp",
+          "threshold": 100,
+          "strength": 75,
+          "blockSize": 10,
+          "angle": 180
+        }
+      },
+      {
+        "id": "57c50b19-d3f7-4dc2-910c-5135e739282a",
+        "type": "pixel-sort",
+        "name": "Pixel Sort",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "intensity",
+          "direction": "vertical",
+          "thresholdLow": 54,
+          "thresholdHigh": 81,
+          "reverse": false
+        }
+      },
+      {
+        "id": "190fc0db-4a6b-4179-b159-a73605f37628",
+        "type": "glow",
+        "name": "Glow",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "radius": 10,
+          "strength": 36,
+          "threshold": 58
+        }
+      },
+      {
+        "id": "32ce524c-ebb6-49d2-9d84-4b08e2f752bb",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "atkinson",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 6,
+          "scale": 1
+        }
+      },
+      {
+        "id": "88bc85e3-2b85-43bb-927e-517fe4c8d729",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 0,
+          "contrast": 38
+        }
+      },
+      {
+        "id": "ea24371b-8f27-46f6-ab45-66c568301207",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "444a0887-2c84-4dcb-a249-d623ac16e419",
+              "hex": "#0c0d08",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "6b5e7bb1-e941-488d-b8d1-2aa74c0f10d8",
+              "hex": "#2b2d29",
+              "weight": 100,
+              "stop": 22.953964194373402
+            },
+            {
+              "id": "dd387772-1a09-477d-bd86-88c5f54e15d3",
+              "hex": "#ff0000",
+              "weight": 100,
+              "stop": 50.767263427109974
+            },
+            {
+              "id": "cf299d05-316a-40a5-a17f-94ae3d32aa11",
+              "hex": "#73214d",
+              "weight": 100,
+              "stop": 69.8849104859335
+            },
+            {
+              "id": "2a1740f7-a5fc-400e-b0fa-1b8b026ec524",
+              "hex": "#ffd2ad",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764613089916",
+    "name": "Cyclon",
+    "effects": [
+      {
+        "id": "3bc86ef8-26fe-49ea-8317-56268248b64f",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 0.5
+        }
+      },
+      {
+        "id": "069b67c1-2c1d-4b53-8fc2-d84d5c72a3ef",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "atkinson",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 4,
+          "scale": 1
+        }
+      },
+      {
+        "id": "fa9fca6d-f453-41a2-9678-249f9ca1279a",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "16856b3a-a53b-4ec8-a89e-7b445e410bac",
+              "hex": "#0f0000",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "8c4c3053-5481-4e19-b806-694f9b49d3d9",
+              "hex": "#563659",
+              "weight": 100,
+              "stop": 41.37630662020905
+            },
+            {
+              "id": "73ba8e05-af7a-4885-af84-170d700dd00e",
+              "hex": "#2c43a0",
+              "weight": 100,
+              "stop": 56.27177700348432
+            },
+            {
+              "id": "6344bbdb-a397-4fc6-82cc-6163336042ee",
+              "hex": "#dd8740",
+              "weight": 100,
+              "stop": 72.90940766550521
+            },
+            {
+              "id": "a7617c26-9960-453e-ab20-218a4042fac6",
+              "hex": "#d6ee5d",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "dc6589d6-1bde-48c5-86a0-f82c6cc108d4",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 2
+        }
+      },
+      {
+        "id": "aa349ae5-6ac2-40b1-9af4-5359f6864888",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "strength": 100,
+          "threshold": 2,
+          "iterations": 4
+        }
+      },
+      {
+        "id": "0a5df349-1932-4656-b3f3-56010ee91659",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "noise",
+          "strength": 24,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 7,
+          "scale": 1
+        }
+      },
+      {
+        "id": "6c862e15-091c-4338-8ab1-1a6328f3109c",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 0,
+          "contrast": 39
+        }
+      },
+      {
+        "id": "8b7d4336-2954-4e50-b167-07393080de28",
+        "type": "sharpen",
+        "name": "Sharpen",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "amount": 23
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764625980161",
+    "name": "Light Crt Distortion",
+    "effects": [
+      {
+        "id": "cf5007a9-0c6b-4f58-ad70-b3d6c7759dfd",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 0.5
+        }
+      },
+      {
+        "id": "6649823c-e1a6-4581-851a-a845d82f6d3c",
+        "type": "datamosh",
+        "name": "Datamosh",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "vector-warp",
+          "threshold": 100,
+          "strength": 72,
+          "blockSize": 10,
+          "angle": 180
+        }
+      },
+      {
+        "id": "08c061b1-9ad0-4b69-969a-505055d51b66",
+        "type": "pixel-sort",
+        "name": "Pixel Sort",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "intensity",
+          "direction": "vertical",
+          "thresholdLow": 53,
+          "thresholdHigh": 81,
+          "reverse": false
+        }
+      },
+      {
+        "id": "a73d82a5-9209-449d-89f0-8ee55a888c9a",
+        "type": "glow",
+        "name": "Glow",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "radius": 10,
+          "strength": 36,
+          "threshold": 58
+        }
+      },
+      {
+        "id": "28e5a366-1cd0-4d6a-8001-8d3c49d8c7a7",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": false,
+        "data": {
+          "method": "atkinson",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 6,
+          "scale": 1
+        }
+      },
+      {
+        "id": "c19ca682-304f-494a-a212-c6f282154796",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 0,
+          "contrast": 38
+        }
+      },
+      {
+        "id": "dc696074-9ab6-4602-be4f-f3614e414b8c",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "444a0887-2c84-4dcb-a249-d623ac16e419",
+              "hex": "#0c0d08",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "6b5e7bb1-e941-488d-b8d1-2aa74c0f10d8",
+              "hex": "#2b2d29",
+              "weight": 100,
+              "stop": 22.953964194373402
+            },
+            {
+              "id": "dd387772-1a09-477d-bd86-88c5f54e15d3",
+              "hex": "#ff0000",
+              "weight": 100,
+              "stop": 50.767263427109974
+            },
+            {
+              "id": "cf299d05-316a-40a5-a17f-94ae3d32aa11",
+              "hex": "#73214d",
+              "weight": 100,
+              "stop": 69.8849104859335
+            },
+            {
+              "id": "2a1740f7-a5fc-400e-b0fa-1b8b026ec524",
+              "hex": "#ffd2ad",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "1abc310c-b630-4bd7-b00e-297bdd7bfd37",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "strength": 43,
+          "threshold": 0,
+          "iterations": 1
+        }
+      },
+      {
+        "id": "0124a177-f78a-424d-8376-d4fc3f0bc56b",
+        "type": "glitch",
+        "name": "Glitch",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "crt",
+          "amount": 3,
+          "seed": 21,
+          "iterations": 5,
+          "quality": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764626471081",
+    "name": "Cartoon VHS",
+    "effects": [
+      {
+        "id": "03028eef-6de4-4ed4-b4f3-7b77802041df",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "data": {
+          "scale": 1
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "9a6f28de-697f-4018-8cbf-b039a7a1bbd1",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "data": {
+          "method": "floyd-steinberg",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 14,
+          "scale": 1
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "90d3e9ab-fa9e-41b6-b39b-3bace013b112",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "data": {
+          "colors": [
+            {
+              "id": "bc864cc1-d115-4b59-9e8b-11b68d40b09d",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "e6603378-a182-49df-a53f-80d970326ca9",
+              "hex": "#454545",
+              "weight": 100,
+              "stop": 29.529616724738673
+            },
+            {
+              "id": "66941ac5-c526-42b5-a7ae-50f8fa6d36aa",
+              "hex": "#3877dc",
+              "weight": 100,
+              "stop": 65.05499349313631
+            },
+            {
+              "id": "9f90866e-99f3-42b8-9d2a-088b5d52b833",
+              "hex": "#8c9b8c",
+              "weight": 100,
+              "stop": 72.07191133873474
+            },
+            {
+              "id": "d02eb44d-ec4e-4d20-9e72-1fffe8eaaba5",
+              "hex": "#ffffff",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "587585c8-12e7-487b-a02e-dea9a8723993",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "data": {
+          "scale": 2
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "0ad4e3b7-1b54-4b84-ac29-aac3b4e1a1ca",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": true,
+        "data": {
+          "strength": 100,
+          "threshold": 13,
+          "iterations": 4
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "2ddba470-2316-4b35-a47c-affb833c7add",
+        "type": "sharpen",
+        "name": "Sharpen",
+        "isCollapsed": true,
+        "data": {
+          "amount": 60
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "b36a6fd2-dc15-480d-a2c9-da6ee167636c",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "data": {
+          "method": "noise",
+          "strength": 51,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 9,
+          "scale": 1
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "de5778e0-6c87-4d6e-9de4-c04fe22368ce",
+        "type": "glitch",
+        "name": "Glitch",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "crt",
+          "amount": 35,
+          "seed": 31,
+          "iterations": 5,
+          "quality": 100
+        }
+      },
+      {
+        "id": "3abbc002-7cca-471f-864a-86cd558f08ce",
+        "type": "glow",
+        "name": "Glow",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "radius": 34,
+          "strength": 12,
+          "threshold": 48
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764628066171",
+    "name": "Ancient Diffusion 3",
+    "effects": [
+      {
+        "id": "038e31cb-d6be-4f3b-9ba4-03768ee69119",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 1
+        }
+      },
+      {
+        "id": "078831dd-9488-456a-9f64-354eb8b765d0",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "error-diffusion-1d",
+          "strength": 47,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 2,
+          "scale": 1
+        }
+      },
+      {
+        "id": "0de8d40e-970b-4947-8332-4ecf48dfe9d9",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "5beed621-133a-4871-a515-9f6e40e50f20",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "4e3a8111-a8ad-488a-9bcc-4916bc0cf117",
+              "hex": "#090909",
+              "weight": 100,
+              "stop": 16.666666666666664
+            },
+            {
+              "id": "3c2c01f3-09f0-4512-b4a7-641653324022",
+              "hex": "#101010",
+              "weight": 100,
+              "stop": 33.33333333333333
+            },
+            {
+              "id": "916a02ca-edf7-481c-96bb-adc0f32a98ef",
+              "hex": "#1c1c1c",
+              "weight": 100,
+              "stop": 50
+            },
+            {
+              "id": "a9b0f447-1887-4583-88a9-62e6443f2aac",
+              "hex": "#383838",
+              "weight": 100,
+              "stop": 66.66666666666666
+            },
+            {
+              "id": "cbfab0da-490f-4c56-bc33-c06b9aaff32a",
+              "hex": "#958ff0",
+              "weight": 100,
+              "stop": 83.33333333333334
+            },
+            {
+              "id": "790b06df-0960-4164-a71d-72c1dfd4711e",
+              "hex": "#ffffff",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "16ba26fa-baf9-41fd-ac8f-9595928a3725",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 2
+        }
+      },
+      {
+        "id": "994f246a-2bce-4d73-8474-e32a5e27db6e",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "strength": 93,
+          "threshold": 0,
+          "iterations": 4
+        }
+      },
+      {
+        "id": "4ee63aa3-cf16-4cc7-8b87-cdfc14e9d294",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "blue-noise",
+          "strength": 15,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 7,
+          "scale": 1
+        }
+      },
+      {
+        "id": "ac69b273-9b73-4188-a9c9-f3420c924223",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 12,
+          "contrast": 38
+        }
+      },
+      {
+        "id": "fefbe018-b5cc-4ebc-b65d-188cea6c2872",
+        "type": "sharpen",
+        "name": "Sharpen",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "amount": 100,
+          "method": "unsharp-mask",
+          "radius": 8,
+          "threshold": 97
+        }
+      },
+      {
+        "id": "8da2f01d-3c03-42cb-9bf8-3e56fc143b09",
+        "type": "glow",
+        "name": "Glow",
+        "isCollapsed": false,
+        "isEnabled": true,
+        "data": {
+          "radius": 33,
+          "strength": 17,
+          "threshold": 50
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764633324212",
+    "name": "Data Noid",
+    "effects": [
+      {
+        "id": "8ec65378-842e-4297-9f51-9dfd8277b7ca",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "data": {
+          "scale": 0.25
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "940e3872-7025-4c70-b79c-2cc248e5f6fc",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "887a369f-b3ff-4351-9e7e-99dd89d7c907",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "9a1a616f-07c7-4474-a45b-011918124bca",
+              "hex": "#000000",
+              "weight": 100,
+              "stop": 5.881797907016644
+            },
+            {
+              "id": "466d2670-6e12-48b7-929b-f5c1777cc574",
+              "hex": "#212121",
+              "weight": 100,
+              "stop": 10.236747297992792
+            },
+            {
+              "id": "cf2c9c0a-e0af-47b6-96ca-6797d869af72",
+              "hex": "#5e5e5e",
+              "weight": 100,
+              "stop": 16.33556356150284
+            },
+            {
+              "id": "ae2745b7-7324-4d54-9381-3be0d9a08d85",
+              "hex": "#cccccc",
+              "weight": 100,
+              "stop": 26.080802882141004
+            },
+            {
+              "id": "0efc520d-de33-4013-8202-c99dfbab5fcf",
+              "hex": "#ffffff",
+              "weight": 100,
+              "stop": 56.75501801338137
+            },
+            {
+              "id": "21a10a75-42fa-40d3-b3ba-d3f965369a63",
+              "hex": "#ffffff",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "009961b3-1b94-468b-a9d4-ae5fda5cbd72",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "data": {
+          "method": "bayer-4x4",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 2,
+          "scale": 1
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "cbcc6568-a3e4-4c3f-aa1d-a6519dcf29f8",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "strength": 100,
+          "threshold": 97,
+          "iterations": 4
+        }
+      },
+      {
+        "id": "34c42dd5-ca5b-48d5-95f4-28851b80afe9",
+        "type": "datamosh",
+        "name": "Datamosh",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "smear",
+          "threshold": 83,
+          "strength": 53,
+          "blockSize": 8,
+          "angle": 90
+        }
+      },
+      {
+        "id": "865b045a-9cfa-4098-ad41-2f1c572622cc",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 2
+        }
+      },
+      {
+        "id": "1803f755-efcb-4eb7-9057-8aa6dd7e817a",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "strength": 100,
+          "threshold": 10,
+          "iterations": 16
+        }
+      },
+      {
+        "id": "6a6260c7-9d3c-4e75-b6ba-acecbc23ad89",
+        "type": "glitch",
+        "name": "Glitch",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "mode": "noise",
+          "amount": 58,
+          "seed": 18,
+          "iterations": 11,
+          "quality": 80
+        }
+      },
+      {
+        "id": "9278abdb-b742-42a1-95a6-903a08c10349",
+        "type": "sharpen",
+        "name": "Sharpen",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "unsharp-mask",
+          "amount": 17,
+          "radius": 2,
+          "threshold": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764642780799",
+    "name": "ASCII Small Blocks",
+    "effects": [
+      {
+        "id": "0ae66990-4143-482b-ab92-afecb3cf12f8",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "38806e64-7501-4c2e-8f84-685aee46bd65",
+              "hex": "#0d0d0d",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "2a10b92e-5508-4d47-9b03-fe7c2b6d7e13",
+              "hex": "#232720",
+              "weight": 100,
+              "stop": 25
+            },
+            {
+              "id": "39bfce5f-efa4-498f-9e2e-8e1035eedf10",
+              "hex": "#59582f",
+              "weight": 100,
+              "stop": 50
+            },
+            {
+              "id": "79d997fa-13d7-4ffa-8239-f11bf4a73ef1",
+              "hex": "#998138",
+              "weight": 100,
+              "stop": 75
+            },
+            {
+              "id": "e7e5efae-573b-4cac-b836-76e2e5114f73",
+              "hex": "#d7ac27",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "8530d33b-5e5b-4ebf-afee-0296eb9a2a36",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 7,
+          "contrast": 26
+        }
+      },
+      {
+        "id": "87b0e709-145b-4245-a2f6-723862e53030",
+        "type": "ascii",
+        "name": "ASCII Art",
+        "isCollapsed": false,
+        "isEnabled": true,
+        "data": {
+          "algorithm": "blocks",
+          "scale": 12,
+          "contrast": 0.5,
+          "inverted": false,
+          "colorMode": "custom",
+          "customColor": "#000000",
+          "customChars": "",
+          "overlay": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764642967969",
+    "name": "ASCII Block Art Small",
+    "effects": [
+      {
+        "id": "0ae66990-4143-482b-ab92-afecb3cf12f8",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": false,
+        "data": {
+          "colors": [
+            {
+              "id": "38806e64-7501-4c2e-8f84-685aee46bd65",
+              "hex": "#0d0d0d",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "2a10b92e-5508-4d47-9b03-fe7c2b6d7e13",
+              "hex": "#232720",
+              "weight": 100,
+              "stop": 25
+            },
+            {
+              "id": "39bfce5f-efa4-498f-9e2e-8e1035eedf10",
+              "hex": "#59582f",
+              "weight": 100,
+              "stop": 50
+            },
+            {
+              "id": "79d997fa-13d7-4ffa-8239-f11bf4a73ef1",
+              "hex": "#998138",
+              "weight": 100,
+              "stop": 75
+            },
+            {
+              "id": "e7e5efae-573b-4cac-b836-76e2e5114f73",
+              "hex": "#d7ac27",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "8530d33b-5e5b-4ebf-afee-0296eb9a2a36",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 7,
+          "contrast": 26
+        }
+      },
+      {
+        "id": "87b0e709-145b-4245-a2f6-723862e53030",
+        "type": "ascii",
+        "name": "ASCII Art",
+        "isCollapsed": false,
+        "isEnabled": true,
+        "data": {
+          "algorithm": "blocks",
+          "scale": 8,
+          "contrast": 0.8,
+          "inverted": true,
+          "colorMode": "mono",
+          "customColor": "#000000",
+          "customChars": "",
+          "overlay": false
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764642998216",
+    "name": "ASCII Block Art Overlay",
+    "effects": [
+      {
+        "id": "0ae66990-4143-482b-ab92-afecb3cf12f8",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": false,
+        "data": {
+          "colors": [
+            {
+              "id": "38806e64-7501-4c2e-8f84-685aee46bd65",
+              "hex": "#0d0d0d",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "2a10b92e-5508-4d47-9b03-fe7c2b6d7e13",
+              "hex": "#232720",
+              "weight": 100,
+              "stop": 25
+            },
+            {
+              "id": "39bfce5f-efa4-498f-9e2e-8e1035eedf10",
+              "hex": "#59582f",
+              "weight": 100,
+              "stop": 50
+            },
+            {
+              "id": "79d997fa-13d7-4ffa-8239-f11bf4a73ef1",
+              "hex": "#998138",
+              "weight": 100,
+              "stop": 75
+            },
+            {
+              "id": "e7e5efae-573b-4cac-b836-76e2e5114f73",
+              "hex": "#d7ac27",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "8530d33b-5e5b-4ebf-afee-0296eb9a2a36",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 7,
+          "contrast": 26
+        }
+      },
+      {
+        "id": "87b0e709-145b-4245-a2f6-723862e53030",
+        "type": "ascii",
+        "name": "ASCII Art",
+        "isCollapsed": false,
+        "isEnabled": true,
+        "data": {
+          "algorithm": "blocks",
+          "scale": 8,
+          "contrast": 0.8,
+          "inverted": true,
+          "colorMode": "mono",
+          "customColor": "#000000",
+          "customChars": "",
+          "overlay": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764643186425",
+    "name": "ASCII Black Overlay",
+    "effects": [
+      {
+        "id": "0ae66990-4143-482b-ab92-afecb3cf12f8",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": false,
+        "data": {
+          "colors": [
+            {
+              "id": "38806e64-7501-4c2e-8f84-685aee46bd65",
+              "hex": "#0d0d0d",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "2a10b92e-5508-4d47-9b03-fe7c2b6d7e13",
+              "hex": "#232720",
+              "weight": 100,
+              "stop": 25
+            },
+            {
+              "id": "39bfce5f-efa4-498f-9e2e-8e1035eedf10",
+              "hex": "#59582f",
+              "weight": 100,
+              "stop": 50
+            },
+            {
+              "id": "79d997fa-13d7-4ffa-8239-f11bf4a73ef1",
+              "hex": "#998138",
+              "weight": 100,
+              "stop": 75
+            },
+            {
+              "id": "e7e5efae-573b-4cac-b836-76e2e5114f73",
+              "hex": "#d7ac27",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "8530d33b-5e5b-4ebf-afee-0296eb9a2a36",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 7,
+          "contrast": 26
+        }
+      },
+      {
+        "id": "87b0e709-145b-4245-a2f6-723862e53030",
+        "type": "ascii",
+        "name": "ASCII Art",
+        "isCollapsed": false,
+        "isEnabled": true,
+        "data": {
+          "algorithm": "standard",
+          "scale": 34,
+          "contrast": 1.9,
+          "inverted": false,
+          "colorMode": "custom",
+          "customColor": "#000000",
+          "customChars": "",
+          "overlay": true
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764643446480",
+    "name": "Silhouette ASCII",
+    "effects": [
+      {
+        "id": "4e1d569d-2313-42f5-bbe2-01d2f7e2e786",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": false,
+        "data": {
+          "colors": [
+            {
+              "id": "38806e64-7501-4c2e-8f84-685aee46bd65",
+              "hex": "#0d0d0d",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "2a10b92e-5508-4d47-9b03-fe7c2b6d7e13",
+              "hex": "#232720",
+              "weight": 100,
+              "stop": 25
+            },
+            {
+              "id": "39bfce5f-efa4-498f-9e2e-8e1035eedf10",
+              "hex": "#59582f",
+              "weight": 100,
+              "stop": 50
+            },
+            {
+              "id": "79d997fa-13d7-4ffa-8239-f11bf4a73ef1",
+              "hex": "#998138",
+              "weight": 100,
+              "stop": 75
+            },
+            {
+              "id": "e7e5efae-573b-4cac-b836-76e2e5114f73",
+              "hex": "#d7ac27",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      },
+      {
+        "id": "cdca8d2a-bce2-4eab-a503-c8468edc98f9",
+        "type": "contrast-brightness",
+        "name": "Contrast / Brightness",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "brightness": 7,
+          "contrast": 26
+        }
+      },
+      {
+        "id": "4d3048e4-2faa-44f6-b8a6-b5c4d0ff1775",
+        "type": "ascii",
+        "name": "ASCII Art",
+        "isCollapsed": false,
+        "isEnabled": true,
+        "data": {
+          "algorithm": "standard",
+          "scale": 13,
+          "contrast": 1.1,
+          "inverted": true,
+          "colorMode": "mono",
+          "customColor": "#000000",
+          "customChars": "",
+          "overlay": false
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764764615560",
+    "name": "Jarvis Judis 1",
+    "effects": [
+      {
+        "id": "5991688c-80b3-4120-b362-a12097aadc08",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 0.675
+        }
+      },
+      {
+        "id": "0c6d504c-3185-47e0-95d8-05e22cba56d0",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "jarvis-judice-ninke",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 5,
+          "scale": 1,
+          "contrast": 12,
+          "gamma": 0.7,
+          "blurRadius": 0,
+          "errorStrength": 100,
+          "luminanceThreshold": 70,
+          "invert": false,
+          "scanPattern": "serpentine"
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764764733200",
+    "name": "Little Grunge",
+    "effects": [
+      {
+        "id": "5991688c-80b3-4120-b362-a12097aadc08",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 0.675
+        }
+      },
+      {
+        "id": "0c6d504c-3185-47e0-95d8-05e22cba56d0",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "adaptive-fs-3x3",
+          "strength": 68,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 5,
+          "scale": 1,
+          "contrast": 12,
+          "gamma": 0.7,
+          "blurRadius": 0,
+          "errorStrength": 100,
+          "luminanceThreshold": 70,
+          "invert": false,
+          "scanPattern": "standard"
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764765020016",
+    "name": "Cool Guy",
+    "effects": [
+      {
+        "id": "bbfe713b-8599-46fc-8cbb-8983af8f6c0c",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "data": {
+          "scale": 0.5
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "da93c33e-e13c-4ef7-81c3-4e2426b74ec1",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": false,
+        "data": {
+          "method": "atkinson",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 4,
+          "scale": 1,
+          "scanPattern": "vertical",
+          "errorStrength": 150,
+          "luminanceThreshold": 166,
+          "contrast": 78
+        },
+        "isEnabled": true
+      },
+      {
+        "id": "5b30f10e-0612-48e4-a3d7-790f0d24307c",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "data": {
+          "colors": [
+            {
+              "id": "bc864cc1-d115-4b59-9e8b-11b68d40b09d",
+              "hex": "#0c0d08",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "e6603378-a182-49df-a53f-80d970326ca9",
+              "hex": "#5d1414",
+              "weight": 100,
+              "stop": 34.63414634146341
+            },
+            {
+              "id": "66941ac5-c526-42b5-a7ae-50f8fa6d36aa",
+              "hex": "#426fb8",
+              "weight": 100,
+              "stop": 48.918771777003485
+            },
+            {
+              "id": "9f90866e-99f3-42b8-9d2a-088b5d52b833",
+              "hex": "#8c9b8c",
+              "weight": 100,
+              "stop": 68.57360627177701
+            },
+            {
+              "id": "d02eb44d-ec4e-4d20-9e72-1fffe8eaaba5",
+              "hex": "#f3f4f1",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        },
+        "isEnabled": true
+      }
+    ]
+  },
+  {
+    "id": "1764876069420",
+    "name": "Yellow Attack",
+    "effects": [
+      {
+        "id": "a4282b40-5a89-475f-b8c5-73a4e5180b22",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "d9ed9b6b-2b66-4602-bb56-73be7f7610bc",
+              "hex": "#030401",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "1c816bae-c2cc-4658-8983-58a120deee05",
+              "hex": "#312b1d",
+              "weight": 100,
+              "stop": 25
+            },
+            {
+              "id": "a17ba09a-23d1-4553-acf4-1d4b0bd81901",
+              "hex": "#514a37",
+              "weight": 100,
+              "stop": 50
+            },
+            {
+              "id": "ff2c8a27-8f2f-41f2-a7bf-d875e679c02d",
+              "hex": "#eeff00",
+              "weight": 100,
+              "stop": 72.8125
+            },
+            {
+              "id": "57c1494f-08aa-4161-a1ed-7fd008caf928",
+              "hex": "#ffffff",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 71
+        }
+      },
+      {
+        "id": "990e14ce-af4f-4d1b-a119-96429c9b5c55",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "jarvis-judice-ninke",
+          "strength": 79,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 5,
+          "scale": 1,
+          "contrast": 58,
+          "gamma": 1,
+          "blurRadius": 0,
+          "highlightsCompression": 44,
+          "invert": false
+        }
+      },
+      {
+        "id": "dbd4ee44-2270-4637-8dcd-15cae2681b7c",
+        "type": "glow",
+        "name": "Glow",
+        "isCollapsed": false,
+        "isEnabled": true,
+        "data": {
+          "radius": 10,
+          "strength": 76,
+          "threshold": 50
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764876358407",
+    "name": "Yellow Attack 2",
+    "effects": [
+      {
+        "id": "3320b5d2-eaa7-4d86-b3a5-b5ec45c50f33",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 0.59
+        }
+      },
+      {
+        "id": "a4282b40-5a89-475f-b8c5-73a4e5180b22",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "d9ed9b6b-2b66-4602-bb56-73be7f7610bc",
+              "hex": "#030401",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "1c816bae-c2cc-4658-8983-58a120deee05",
+              "hex": "#312b1d",
+              "weight": 100,
+              "stop": 25
+            },
+            {
+              "id": "a17ba09a-23d1-4553-acf4-1d4b0bd81901",
+              "hex": "#514a37",
+              "weight": 100,
+              "stop": 50
+            },
+            {
+              "id": "ff2c8a27-8f2f-41f2-a7bf-d875e679c02d",
+              "hex": "#eeff00",
+              "weight": 100,
+              "stop": 72.8125
+            },
+            {
+              "id": "57c1494f-08aa-4161-a1ed-7fd008caf928",
+              "hex": "#ffffff",
+              "weight": 100,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 71
+        }
+      },
+      {
+        "id": "990e14ce-af4f-4d1b-a119-96429c9b5c55",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "floyd-steinberg",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": false,
+          "levels": 4,
+          "scale": 11,
+          "contrast": 42,
+          "gamma": 1,
+          "blurRadius": 0,
+          "highlightsCompression": 44,
+          "invert": false,
+          "errorStrength": 65,
+          "luminanceThreshold": 191,
+          "scanPattern": "zig-zag"
+        }
+      },
+      {
+        "id": "dbd4ee44-2270-4637-8dcd-15cae2681b7c",
+        "type": "glow",
+        "name": "Glow",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "radius": 10,
+          "strength": 76,
+          "threshold": 50
+        }
+      },
+      {
+        "id": "b3ecb159-fd8e-4429-94d4-1965c08a33ca",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "strength": 100,
+          "threshold": 52,
+          "iterations": 2
+        }
+      },
+      {
+        "id": "0650b05c-2ae4-46d6-9921-1ec2f6ddae75",
+        "type": "sharpen",
+        "name": "Sharpen",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "standard",
+          "amount": 89,
+          "radius": 2,
+          "threshold": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764966222458",
+    "name": "Autobus",
+    "effects": [
+      {
+        "id": "5c772553-df4a-4bd1-a88a-409482108a42",
+        "type": "glow",
+        "name": "Glow",
+        "isCollapsed": true,
+        "isEnabled": false,
+        "data": {
+          "radius": 45,
+          "strength": 103,
+          "threshold": 55,
+          "feather": 36
+        }
+      },
+      {
+        "id": "7d880595-f594-45d6-a734-f493b180f412",
+        "type": "blur",
+        "name": "Blur",
+        "isCollapsed": false,
+        "isEnabled": false,
+        "data": {
+          "type": "motion",
+          "radius": 36,
+          "angle": 0
+        }
+      },
+      {
+        "id": "c68f4fa7-ec0b-40c0-912b-c72e40b27587",
+        "type": "halftone",
+        "name": "Halftone",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "shape": "circle",
+          "size": 8,
+          "angle": 45,
+          "contrast": 5,
+          "colorMode": "mono",
+          "intensity": 100,
+          "invert": true
+        }
+      },
+      {
+        "id": "503dfabc-a096-4d84-aa28-5f83a790a4f5",
+        "type": "antialias",
+        "name": "Antialias",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "strength": 100,
+          "threshold": 10,
+          "iterations": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764968414546",
+    "name": "Blury Italy",
+    "effects": [
+      {
+        "id": "1d87fbb9-db0c-48de-879a-d1cf87623525",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 0.5
+        }
+      },
+      {
+        "id": "5cf7599a-0274-4223-9d1f-b9d2f5acb859",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "floyd-steinberg",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 2,
+          "scale": 1
+        }
+      },
+      {
+        "id": "8b30829a-cb2d-4867-8f38-4a79f8784bba",
+        "type": "blur",
+        "name": "Blur",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "type": "motion",
+          "radius": 13,
+          "angle": 0,
+          "intensity": 58
+        }
+      },
+      {
+        "id": "34e391a4-9de3-4d90-bf31-a921aca65647",
+        "type": "sharpen",
+        "name": "Sharpen",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "unsharp-mask",
+          "amount": 78,
+          "radius": 2,
+          "threshold": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "1764969149407",
+    "name": "Blury Italy 2",
+    "effects": [
+      {
+        "id": "aa36e4e2-8d56-4aa5-9ed2-63cf688330d9",
+        "type": "curves",
+        "name": "Curves & Levels",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "points": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 12.1125,
+              "y": 0
+            },
+            {
+              "x": 46.5375,
+              "y": 39.525
+            },
+            {
+              "x": 255,
+              "y": 255
+            }
+          ],
+          "channel": "rgb",
+          "inputMin": 0,
+          "inputMax": 255,
+          "outputMin": 0,
+          "outputMax": 255,
+          "gamma": 1
+        }
+      },
+      {
+        "id": "1d87fbb9-db0c-48de-879a-d1cf87623525",
+        "type": "resize",
+        "name": "Resize",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "scale": 0.2
+        }
+      },
+      {
+        "id": "5cf7599a-0274-4223-9d1f-b9d2f5acb859",
+        "type": "dither",
+        "name": "Dithering",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "floyd-steinberg",
+          "strength": 100,
+          "threshold": 128,
+          "grayscale": true,
+          "levels": 2,
+          "scale": 1,
+          "gamma": 1,
+          "errorStrength": 98
+        }
+      },
+      {
+        "id": "8b30829a-cb2d-4867-8f38-4a79f8784bba",
+        "type": "blur",
+        "name": "Blur",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "type": "gaussian",
+          "radius": 23,
+          "angle": 0,
+          "intensity": 38
+        }
+      },
+      {
+        "id": "34e391a4-9de3-4d90-bf31-a921aca65647",
+        "type": "sharpen",
+        "name": "Sharpen",
+        "isCollapsed": true,
+        "isEnabled": true,
+        "data": {
+          "method": "unsharp-mask",
+          "amount": 57,
+          "radius": 2,
+          "threshold": 0
+        }
+      },
+      {
+        "id": "7453f837-dbce-4916-810d-d434bc5daeca",
+        "type": "fine-tune",
+        "name": "Fine Tune Colors",
+        "isCollapsed": false,
+        "isEnabled": true,
+        "data": {
+          "colors": [
+            {
+              "id": "0e683c6d-eb82-4727-bba4-9d4f658852a3",
+              "hex": "#110d0f",
+              "weight": 100,
+              "stop": 0
+            },
+            {
+              "id": "ed8c3754-15a6-456e-b3f5-8eb5e0d34aee",
+              "hex": "#181216",
+              "weight": 100,
+              "stop": 25
+            },
+            {
+              "id": "a0162499-6137-4052-bacf-6af6acd6f7e4",
+              "hex": "#191926",
+              "weight": 100,
+              "stop": 50
+            },
+            {
+              "id": "9e597fe2-2831-4b46-bbd8-6d1be83ba02e",
+              "hex": "#1e2b4c",
+              "weight": 100,
+              "stop": 75
+            },
+            {
+              "id": "02819592-d621-49f6-88d8-163a711838e7",
+              "hex": "#325185",
+              "weight": 57,
+              "stop": 100
+            }
+          ],
+          "mode": "blend",
+          "intensity": 100
+        }
+      }
+    ]
+  }
+]
