@@ -11,7 +11,7 @@
 
 ### **1. Live Demo (Recommended)**
 Run the app instantly, with no installation needed (Presets not included):  
-👉 **palette-master-antigravityaiproject.netlify.app/**
+👉 **palette-master-antigravityaiproject.netlify.app**
 
 ### **2. Local Alternative**
 If you prefer running the app locally without Node.js:
