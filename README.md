@@ -2,7 +2,7 @@
 
 > **Note:** This project serves as an exploration and experiment into the capabilities of the **Antigravity AI Agent**. It was built to test advanced agentic coding, pair programming workflows, and real-time problem solving.
 
-**Palette Master** is a high-performance, browser-based image processing platform designed for glitch art, palette extraction, and creative coding experiments. It combines the power of low-level pixel manipulation with a modern React interface.
+**Palette Master** is a high-performance, browser-based image processing platform designed for glitch art, palette extraction, and creative image editing experiments. It combines the power of low-level pixel manipulation with a modern React interface.
 
 ![Project Status](https://img.shields.io/badge/Status-Experimental-orange)
 ![Tech Stack](https://img.shields.io/badge/Stack-React_|_Vite_|_TypeScript-blue)
