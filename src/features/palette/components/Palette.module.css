@@ -1,0 +1,234 @@
+.section {
+    margin-bottom: 2rem;
+}
+
+.sectionTitle {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.previewContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.previewImage {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+.controlsContainer {
+    margin-top: 1.5rem;
+}
+
+.controlRow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.numberInput {
+    width: 60px;
+}
+
+.generateButton {
+    width: 100%;
+}
+
+.emptyState {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.paletteList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.paletteItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.paletteItem:hover {
+    background-color: var(--bg-tertiary);
+}
+
+.colorStrip {
+    display: flex;
+    flex: 1;
+    height: 12px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.colorBlock {
+    flex: 1;
+}
+
+.deleteButton {
+    border: none;
+    background: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 4px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.paletteItem:hover .deleteButton {
+    opacity: 1;
+}
+
+.deleteButton:hover {
+    color: #ef4444;
+}
+
+/* PaletteDisplay specific */
+.displayCard {
+    margin-top: 1rem;
+}
+
+.displayHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.displayTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.actionButtons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.saveButton {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+}
+
+.paletteGrid {
+    display: flex;
+    height: 100px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.paletteColor {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    transition: flex 0.2s;
+}
+
+.paletteColor:hover {
+    flex: 1.5;
+}
+
+.colorHex {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-family: monospace;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.paletteColor:hover .colorHex {
+    opacity: 1;
+}
+
+/* ImageUpload specific */
+.uploadContainer {
+    border: 2px dashed var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: var(--bg-tertiary);
+}
+
+.uploadContainer:hover {
+    border-color: var(--accent-primary);
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.uploadContent {
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.uploadIcon {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.uploadLabel {
+    font-size: 0.875rem;
+}
+
+.hiddenInput {
+    display: none;
+}
+
+.previewWrapper {
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.previewImg {
+    width: 100%;
+    display: block;
+}
+
+.changeOverlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.previewWrapper:hover .changeOverlay {
+    opacity: 1;
+}
+
+.paletteGrid {
+    min-width: 0;
+}

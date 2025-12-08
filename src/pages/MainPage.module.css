@@ -1,0 +1,97 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--bg-primary);
+}
+
+.workspace {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+.sidebar {
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-secondary);
+    flex-shrink: 0;
+}
+
+.sidebarContent {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.resizerVertical {
+    width: 4px;
+    cursor: col-resize;
+    transition: background-color 0.2s;
+    z-index: 10;
+}
+
+.resizerHorizontal {
+    height: 4px;
+    cursor: row-resize;
+    transition: background-color 0.2s;
+    z-index: 10;
+}
+
+.mainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--bg-primary);
+}
+
+.toolbarContainer {
+    min-height: 60px;
+}
+
+.canvasContainer {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+.rightPanel {
+    border-left: 1px solid var(--border-color);
+    background-color: var(--bg-secondary);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.effectsList {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.addEffectContainer {
+    padding: 1rem;
+    position: relative;
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 2rem 0;
+}
+
+.addEffectButton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+}
+
+.addEffectIcon {
+    font-size: 1.2rem;
+    line-height: 1;
+}

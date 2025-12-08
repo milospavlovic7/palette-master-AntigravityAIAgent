@@ -1,0 +1,62 @@
+.topToolbar {
+    height: 40px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: var(--bg-secondary);
+    flex-shrink: 0;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: -0.02em;
+    background: linear-gradient(to right, var(--accent-primary), var(--accent-secondary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bottomToolbar {
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background-color: var(--bg-secondary);
+    overflow: hidden;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sectionLabel {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.fileInputContainer {
+    width: 200px;
+}
+
+.intensityContainer {
+    flex: 1;
+}
+
+.intensityValue {
+    width: 3ch;
+    font-size: 0.875rem;
+}
+
+.downloadButton {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

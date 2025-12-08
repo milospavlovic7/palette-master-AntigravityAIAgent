@@ -1,0 +1,203 @@
+/* FineTuneControl */
+.fineTuneContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.fineTuneHeader {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.modeToggle {
+    display: flex;
+    background-color: var(--bg-tertiary);
+    padding: 2px;
+    border-radius: var(--radius-md);
+    margin-bottom: 1rem;
+}
+
+.modeButton {
+    flex: 1;
+    padding: 6px;
+    font-size: 0.75rem;
+    border-radius: var(--radius-sm);
+    border: none;
+    background-color: transparent;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.modeButton.active {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.controlGroup {
+    margin-bottom: 1rem;
+}
+
+.controlHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.controlLabel {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.controlValue {
+    font-size: 0.75rem;
+    font-family: monospace;
+}
+
+.rangeInput {
+    width: 100%;
+}
+
+.gradientBarContainer {
+    position: relative;
+    height: 20px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.gradientHandle {
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    width: 4px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: ew-resize;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.colorList {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.colorListContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.colorItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    position: relative;
+    transition: opacity 0.2s;
+}
+
+.colorItem.dragging {
+    opacity: 0.5;
+}
+
+.colorPickerContainer {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.colorInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.colorPreview {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.colorControls {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.weightSliderContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.weightSlider {
+    flex: 1;
+    height: 4px;
+    min-width: 50px;
+}
+
+.colorInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hexCode {
+    font-size: 0.65rem;
+    color: var(--text-secondary);
+    font-family: monospace;
+}
+
+.weightValue {
+    font-size: 0.65rem;
+    color: var(--text-secondary);
+}
+
+.deleteColorButton {
+    border: none;
+    background: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    transition: all 0.2s;
+}
+
+.deleteColorButton:hover {
+    opacity: 1;
+    color: #ef4444;
+}
+
+.addColorButton {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.plusIcon {
+    font-size: 1rem;
+    line-height: 1;
+}
