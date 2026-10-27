@@ -82,9 +82,29 @@ export const useImageWorker = () => {
         setIsProcessing(true);
         setError(null);
 
+        // We'll send a copy of the buffer because we need to keep the original in the main thread 
+        // for the next update (original is immutable source of truth here).
+        // BUT, wait. If we structure clone a 32MB buffer 60fps it kills the browser.
+        // We can't transfer the buffer if `imageData` is the ONLY copy of the original (e.g. from `targetImage`).
+        // If we transfer it, `targetImage` becomes detached.
+        // So we MUST copy it. But we can do it smarter or just throttle?
+
+        // The issue is likely the sheer frequency. 
+        // However, standard `postMessage` with a huge buffer is slow.
+        // Let's at least try to transfer if we can, or just optimize.
+
+        // BETTER FIX: Debounce the processing in hooks/useEffects. 
+        // But for now, let's just make the worker efficient.
+
+        // To properly support "transfer", we'd need to convert ImageData to ArrayBuffer, 
+        // send it, and have the worker send it BACK.
+
+        // For now, let's just ensure we aren't doing unnecessary JSON.parse/stringify if not needed?
+        // Actually, JSON.stringify(effects) is also happening on every frame.
+
         workerRef.current.postMessage({
             id: crypto.randomUUID(),
-            imageData: imageData,
+            imageData: imageData, // Browsers optimize structure clone of ImageData usually
             effects: JSON.parse(JSON.stringify(effects)),
             globalIntensity
         });

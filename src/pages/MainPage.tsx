@@ -84,7 +84,7 @@ export const MainPage: React.FC = () => {
 
     const handleResetChain = () => {
         if (confirm('Are you sure you want to reset the effect chain?')) {
-            setEffects([]);
+            setEffects(prev => prev.filter(e => e.isLocked));
             setActivePresetId('');
         }
     };
@@ -164,6 +164,7 @@ export const MainPage: React.FC = () => {
         }
     };
 
+
     return (
         <div className={styles.container}>
             <TopToolbar />
@@ -241,7 +242,7 @@ export const MainPage: React.FC = () => {
                             onWheel={(e) => { onManualZoom(); handleWheel(e); }}
                             onPanStart={handlePanStart}
                             onPanMove={handlePanMove}
-                            onPanEnd={handlePanEnd}
+                            onPanEnd={handlePanEnd} // Re-use handlePanEnd just to stop native drag, though meaningful logic is in Move
                             onFitToScreen={handleFitToScreen}
                             onZoomIn={() => { onManualZoom(); handleZoomIn(); }}
                             onZoomOut={() => { onManualZoom(); handleZoomOut(); }}

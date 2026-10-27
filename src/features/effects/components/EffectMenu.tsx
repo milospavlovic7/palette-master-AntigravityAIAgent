@@ -35,6 +35,7 @@ export const EffectMenu: React.FC<EffectMenuProps> = ({ isOpen, onClose, onSelec
         { name: 'Adjust', items: ['fine-tune', 'contrast-brightness', 'hsl', 'curves'] },
         { name: 'Transform', items: ['resize', 'pixel-sort', 'datamosh', 'glitch'] },
         { name: 'Filter', items: ['dither', 'ascii', 'halftone', 'blur', 'sharpen', 'antialias', 'glow'] },
+        { name: 'Overlay', items: ['text'] },
     ];
 
     return (

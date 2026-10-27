@@ -15,13 +15,8 @@ export const useCanvasInteraction = () => {
 
     const handleWheel = useCallback((e: React.WheelEvent) => {
         if (e.ctrlKey || e.metaKey) {
-            // Let browser handle zoom if ctrl is pressed (optional, but good for accessibility)
             return;
         }
-
-        // Prevent default behavior if we want to block page scrolling, 
-        // but usually we can't preventDefault in passive listeners easily in React.
-        // Ideally this is attached to a non-passive listener or we just accept it.
 
         if (e.deltaY < 0) {
             setZoom(prev => Math.min(prev * 1.1, 5));
@@ -30,17 +25,20 @@ export const useCanvasInteraction = () => {
         }
     }, []);
 
-    const handlePanStart = useCallback((e: React.MouseEvent) => {
+    const handlePanStart = useCallback((e: React.PointerEvent) => {
         e.preventDefault();
+        // Capture pointer to ensure we get drag events even if cursor leaves the element
+        (e.target as Element).setPointerCapture(e.pointerId);
         setIsPanning(true);
     }, []);
 
-    const handlePanMove = useCallback((e: React.MouseEvent) => {
+    const handlePanMove = useCallback((e: React.PointerEvent) => {
         if (!isPanning) return;
         setPan(prev => ({ x: prev.x + e.movementX, y: prev.y + e.movementY }));
     }, [isPanning]);
 
-    const handlePanEnd = useCallback(() => {
+    const handlePanEnd = useCallback((e: React.PointerEvent) => {
+        (e.target as Element).releasePointerCapture(e.pointerId);
         setIsPanning(false);
     }, []);
 

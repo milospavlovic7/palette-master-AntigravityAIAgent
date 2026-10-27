@@ -67,6 +67,11 @@ export const EffectChain: React.FC<EffectChainProps> = ({
             case 'glow': return <Controls.GlowControl {...commonProps} />;
             case 'datamosh': return <Controls.DatamoshControl {...commonProps} />;
             case 'glitch': return <Controls.GlitchControl {...commonProps} />;
+            case 'text': return (
+                <Controls.TextControl
+                    {...commonProps}
+                />
+            );
             default: return null;
         }
     };

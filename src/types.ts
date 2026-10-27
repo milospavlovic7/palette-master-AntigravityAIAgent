@@ -146,9 +146,28 @@ export interface GlitchData {
     noiseStrength?: number; // 0 to 100
 }
 
-export type EffectType = 'fine-tune' | 'contrast-brightness' | 'hsl' | 'dither' | 'curves' | 'resize' | 'ascii' | 'antialias' | 'blur' | 'sharpen' | 'pixel-sort' | 'halftone' | 'glow' | 'datamosh' | 'glitch';
+export interface TextData {
+    text: string;
+    x: number; // percentage 0-100
+    y: number; // percentage 0-100
+    fontFamily: string;
+    fontSize: number;
+    fontWeight: string; // 'normal', 'bold', '100'-'900'
+    fontStyle: string; // 'normal', 'italic'
+    color: string;
+    rotation: number; // degrees
+    textAlign: 'left' | 'center' | 'right';
+    textBaseline: 'top' | 'middle' | 'bottom';
+    opacity: number; // 0-100
+    blur?: number; // 0-20
+    borderColor?: string;
+    borderWidth?: number; // 0-20
+    isSystemFont?: boolean;
+}
 
-export type EffectData = FineTuneEffectData | ContrastBrightnessData | HSLData | DitherData | CurvesData | ResizeData | AsciiData | AntialiasData | BlurData | SharpenData | PixelSortData | HalftoneData | GlowData | DatamoshData | GlitchData;
+export type EffectType = 'fine-tune' | 'contrast-brightness' | 'hsl' | 'dither' | 'curves' | 'resize' | 'ascii' | 'antialias' | 'blur' | 'sharpen' | 'pixel-sort' | 'halftone' | 'glow' | 'datamosh' | 'glitch' | 'text';
+
+export type EffectData = FineTuneEffectData | ContrastBrightnessData | HSLData | DitherData | CurvesData | ResizeData | AsciiData | AntialiasData | BlurData | SharpenData | PixelSortData | HalftoneData | GlowData | DatamoshData | GlitchData | TextData;
 
 export interface Effect {
     id: string;
@@ -156,6 +175,7 @@ export interface Effect {
     name: string;
     isCollapsed: boolean;
     isEnabled: boolean;
+    isLocked?: boolean;
     data: EffectData;
 }
 

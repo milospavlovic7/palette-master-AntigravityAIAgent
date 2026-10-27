@@ -8,9 +8,9 @@ interface CanvasAreaProps {
     pan: { x: number, y: number };
     isPanning: boolean;
     onWheel: (e: React.WheelEvent) => void;
-    onPanStart: (e: React.MouseEvent) => void;
-    onPanMove: (e: React.MouseEvent) => void;
-    onPanEnd: () => void;
+    onPanStart: (e: React.PointerEvent) => void;
+    onPanMove: (e: React.PointerEvent) => void;
+    onPanEnd: (e: React.PointerEvent) => void;
     onFitToScreen: () => void;
     onZoomIn: () => void;
     onZoomOut: () => void;
@@ -80,13 +80,14 @@ export const CanvasArea: React.FC<CanvasAreaProps> = ({
                 cursor: isPanning ? 'grabbing' : 'grab',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center'
+                justifyContent: 'center',
+                touchAction: 'none' // Important for pointer events
             }}
             onWheel={onWheel}
-            onMouseDown={onPanStart}
-            onMouseMove={onPanMove}
-            onMouseUp={onPanEnd}
-            onMouseLeave={onPanEnd}
+            onPointerDown={onPanStart}
+            onPointerMove={onPanMove}
+            onPointerUp={onPanEnd}
+        // onPointerLeave is NOT needed because of setPointerCapture
         >
             {processedImageUrl ? (
                 <img

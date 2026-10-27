@@ -1,94 +1,94 @@
-# Palette Master
+# 🎨 Palette Master
 
-> **Note:** This project serves as an exploration and experiment into the capabilities of the **Antigravity AI Agent**. It was built to test advanced agentic coding, pair programming workflows, and real-time problem solving.
+A high-performance, browser-based image processing platform designed for glitch art, dithering, palette extraction, and creative pixel manipulation experiments. Built with low-level pixel manipulation algorithms and a modern React interface.
 
-**Palette Master** is a high-performance, browser-based image processing platform designed for glitch art, palette extraction, and creative coding experiments. It combines the power of low-level pixel manipulation with a modern React interface.
-
-![Project Status](https://img.shields.io/badge/Status-Experimental-orange)
-![Tech Stack](https://img.shields.io/badge/Stack-React_|_Vite_|_TypeScript-blue)
-
-## ⚡ Quick Run (No Installation Required)
-For a quick demo without installing Node.js:
-1. Navigate to the **`dist`** folder in this repository.
-2. Open **`index.html`** in your browser.
-*(Note: To develop or make changes, see the [Getting Started](#-getting-started) section below)*
+### 🌐 Try Online: [https://milospavlovic7.github.io/palette-master-AntygravityAIAgent/](https://milospavlovic7.github.io/palette-master-AntygravityAIAgent/)
+*(Mirror: [palette-master-antigravityaiproject.netlify.app](https://palette-master-antigravityaiproject.netlify.app))*
 
 ---
 
-## 🎨 User Guide & Capabilities
+## ✨ Key Features
 
-Palette Master allows you to transform images directly in your browser without uploading data to any server.
+### 1. Interactive Image Canvas
+- **Zero-Cloud Privacy**: Transform images directly in client memory without uploading data to external servers.
+- **Upload & Clipboard**: Drag and drop images or paste directly from clipboard (`Ctrl+V`).
+- **Smooth Navigation**: High-performance canvas with zoom and pan for pixel-perfect inspection.
+- **Instant Comparison**: Toggle effects on/off on the fly to inspect against the original image.
 
-### 1. Image Manipulation Core
-- **Upload & Import**: Drag and drop images or paste from clipboard.
-- **Interactive Canvas**: High-performance canvas with **Zoom** and **Pan** capabilities for analyzing pixel-perfect details.
-- **Comparison Mode**: Toggle effects on/off instantly to compare with the original image.
-
-### 2. The Effect Chain
-The core feature of the application is the **Effect Chain**. Unlike simple filters, you can stack multiple effects, reorder them, and adjust their parameters in real-time. The output of one effect becomes the input for the next.
-
-**Available Effects:**
-- **Dithering**: An extensive collection of algorithms (Floyd-Steinberg, Atkinson, Sierra, Blue Noise, etc.) to simulate retro visual styles.
-- **Glitch Art**:
-  - **Pixel Sorting**: Sort pixels by brightness, hue, or saturation (Horizontal/Vertical).
-  - **Datamosh**: Simulate video compression artifacts.
-  - **Glitch**: Apply digital distortion, RGB shifting, and scanlines.
+### 2. Composable Real-Time Effect Chain
+Stack multiple modular image effects, reorder them dynamically, and fine-tune parameters in real time:
+- **Advanced Dithering**: Floyd-Steinberg, Atkinson, Sierra, Burkes, Jarvis-Judice-Ninke, Ordered (Bayer 2x2, 4x4, 8x8), Blue Noise, and Random Noise.
+- **Glitch & Datamosh Art**:
+  - **Pixel Sorting**: Sort pixels by luminance, hue, or saturation along horizontal or vertical axes.
+  - **Datamosh**: Emulate lossy video compression keyframe drops and artifacting.
+  - **Digital Glitch**: RGB channel shift, scanline dispersion, and sync corruption.
 - **Stylization**:
-  - **ASCII Art**: Convert images into text/characters.
-  - **Halftone**: Print-media effect using dots, lines, or squares.
-  - **Woodcut**: Artistic thresholding.
-- **Adjustments**:
-  - **Curves**: Advanced tone mapping (Photoshop-style curves).
-  - **HSL**: Hue, Saturation, Lightness controls.
-  - **Contrast & Brightness**.
-  - **Fine Tune**: Map specific luminance ranges to custom colors (Gradient Maps).
+  - **ASCII Art**: Convert images into customizable ASCII character grids.
+  - **Halftone**: Print-media simulation using customizable dot, line, or square screens.
+  - **Woodcut**: High-contrast graphic novel thresholding.
+- **Color Grading & Adjustments**:
+  - **Photoshop-style Curves**: Independent RGB and luminance tone-curve shaping.
+  - **HSL Controls**: Precision Hue, Saturation, and Lightness adjustment.
+  - **Palette Quantization**: Map colors to classic hardware palettes (Game Boy, CGA, NES, Cyberpunk, Sepia, Monochrome).
 
-### 3. Palette Management
-- **Extraction**: Automatically analyze the image to extract dominant color palettes using K-Means clustering.
-- **Library**: Save your favorite generated palettes to a local library.
-- **Sorting**: Order palette colors by Luminance, Hue, or Saturation.
-
----
-
-## 🔧 Technical Architecture
-
-This project implements several advanced software engineering patterns to ensure performance and maintainability.
-
-### ⚡ Performance: Web Workers
-The most critical technical feature is the use of **Web Workers**.
-- **Off-Main-Thread Processing**: Image processing (looping through millions of pixels) is computationally expensive. To prevent the UI from freezing, all pixel manipulation happens in a background thread (`imageWorker.ts`).
-- **Asynchronous Messaging**: The React UI communicates with the worker via a messaging system, sending configuration data and receiving processed `ImageData`.
-
-### 🏗️ Design Patterns
-- **Feature-Based Architecture**: The codebase is organized by domain features (`features/effects`, `features/palette`) rather than technical type, making it scalable and easier to navigate.
-- **Chain of Responsibility**: The effect processing engine applies transformations sequentially.
-- **Strategy Pattern**: Algorithms for Dithering and other effects are implemented as interchangeable strategies, allowing the worker to switch methods dynamically based on user input.
-- **Custom React Hooks**: Complex logic (like worker communication and canvas interaction) is encapsulated in hooks like `useImageWorker` and `useCanvasInteraction`.
+### 3. Presets & Export Pipeline
+- **Preset Management**: Save custom effect stacks to JSON and load community configurations.
+- **Lossless Export**: Export processed images directly to PNG.
+- **Offline Self-Contained**: Compiles into a single offline-capable HTML bundle.
 
 ---
 
-## 🚀 Getting Started
+## 🎮 Controls & Shortcuts
 
-To run this experiment locally:
-
-### Prerequisites
-- Node.js (v18+)
-- npm
-
-### Installation
-1. Clone the repository into your workspace.
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-4. Open the displayed URL (usually `http://localhost:5173`).
+- **Paste Image**: `Ctrl + V` anywhere on the screen
+- **Pan Canvas**: Hold `Middle Click` or `Space + Click & Drag`
+- **Zoom**: Mouse Wheel (`Scroll Up` / `Scroll Down`)
+- **Toggle Original**: Press or hold the Compare toggle button
+- **Reorder Effects**: Drag and drop effect blocks inside the effect chain panel
 
 ---
 
-## License
+## 🚀 Quick Start
 
-This project is open-source and available under the [MIT License](LICENSE).
+### Option 1: Play Online (No installation required)
+Launch directly in your browser:  
+👉 **[https://milospavlovic7.github.io/palette-master-AntygravityAIAgent/](https://milospavlovic7.github.io/palette-master-AntygravityAIAgent/)**
+
+### Option 2: Run Standalone Offline
+Open `dist/index.html` directly in any modern web browser.
+
+### Option 3: Local Development
+```bash
+# Clone the repository
+git clone https://github.com/milospavlovic7/palette-master-AntygravityAIAgent.git
+cd palette-master-AntygravityAIAgent
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Option 4: Production Build
+```bash
+npm run build
+```
+Generates a zero-dependency, single-file bundle at `dist/index.html`.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- **Bundler**: [Vite](https://vitejs.dev/) + [`vite-plugin-singlefile`](https://github.com/richardtallent/vite-plugin-singlefile)
+- **Engine**: Pure client-side HTML5 Canvas 2D & TypedArray Pixel Buffer processing
+- **Styling**: Modern CSS Custom Properties & responsive layout
+- **Architecture**: Antigravity AI Agent pair programming experiment
+
+---
+
+## 📜 License
+
+MIT License. Free for educational and personal use.

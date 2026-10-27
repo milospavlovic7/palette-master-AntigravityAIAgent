@@ -136,6 +136,28 @@ export const useEffectsManager = () => {
                     data: { mode: 'rgb-split', amount: 20, seed: 50, iterations: 5, quality: 80 }
                 };
                 break;
+            case 'text':
+                newEffect = {
+                    id, type, name: 'Text', isCollapsed: false, isEnabled: true,
+                    data: {
+                        text: 'Hello World',
+                        x: 50,
+                        y: 50,
+                        fontFamily: 'Arial',
+                        fontSize: 48,
+                        fontWeight: 'bold',
+                        fontStyle: 'normal',
+                        color: '#ffffff',
+                        rotation: 0,
+                        textAlign: 'center',
+                        textBaseline: 'middle',
+                        opacity: 100,
+                        blur: 0,
+                        borderColor: '#000000',
+                        borderWidth: 0
+                    }
+                };
+                break;
             default:
                 return;
         }

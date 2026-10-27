@@ -4,10 +4,10 @@ import {
     applyOrderedDither, applyBlueNoiseDither, applyVoidClusterDither, applyNoiseDither,
     applyCurves, resizeBuffer, applyAsciiEffect, applyAntialias, applyBlur, applySharpen,
     applyPixelSort, applyHalftone, applyGlow, applyDatamosh, applyGlitch,
-    applyAdaptiveFS3x3, applyJJN, applyStevensonArce, applyBlueNoise64, applyBinaryThreshold, applyWoodcut, applyDitherPreProcessing
+    applyAdaptiveFS3x3, applyJJN, applyStevensonArce, applyBlueNoise64, applyBinaryThreshold, applyWoodcut, applyDitherPreProcessing, applyText
 } from './utils/effects';
 import { hexToRgb } from './utils/colorUtils';
-import type { Effect, FineTuneEffectData, ContrastBrightnessData, HSLData, DitherData, CurvesData, ResizeData, AsciiData, AntialiasData, BlurData, SharpenData, PixelSortData, HalftoneData, GlowData, DatamoshData, GlitchData } from './types';
+import type { Effect, FineTuneEffectData, ContrastBrightnessData, HSLData, DitherData, CurvesData, ResizeData, AsciiData, AntialiasData, BlurData, SharpenData, PixelSortData, HalftoneData, GlowData, DatamoshData, GlitchData, TextData } from './types';
 
 self.onmessage = (e: MessageEvent) => {
     const { id, imageData, effects, globalIntensity } = e.data as { id: string, imageData: ImageData, effects: Effect[], globalIntensity: number };
@@ -279,6 +279,15 @@ self.onmessage = (e: MessageEvent) => {
                     data.mode, data.amount, data.seed, data.iterations, data.quality,
                     data.distortionX, data.distortionY, data.colCrunch,
                     data.scanlineIntensity, data.vignetteStrength, data.aberrationStrength, data.noiseStrength
+                ) as any;
+            } else if (effect.type === 'text') {
+                const data = effect.data as TextData;
+                workingBuffer = applyText(
+                    workingBuffer, currentWidth, currentHeight,
+                    data.text, data.x, data.y, data.fontFamily, data.fontSize,
+                    data.fontWeight, data.fontStyle, data.color, data.rotation,
+                    data.textAlign, data.textBaseline, data.opacity, data.blur,
+                    data.borderColor, data.borderWidth
                 ) as any;
             }
         }

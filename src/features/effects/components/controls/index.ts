@@ -13,3 +13,4 @@ export * from './HalftoneControl';
 export * from './GlowControl';
 export * from './DatamoshControl';
 export * from './GlitchControl';
+export * from './TextControl';

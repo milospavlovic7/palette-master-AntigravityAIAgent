@@ -31,16 +31,32 @@ export const usePresets = (
 
     const loadPreset = useCallback((presetId: string) => {
         if (!presetId) {
+            // If clearing preset, just reset but KEEP locked effects? 
+            // Or usually clearing preset means 'no preset active', but effects remain?
+            // Existing logic was setActivePresetId('') only.
+            // If user explicitly clicks "Reset", we handle that elsewhere.
+            // Here, we just toggle active ID.
             setActivePresetId('');
             return;
         }
         const preset = presets.find(p => p.id === presetId);
         if (preset) {
-            const newEffects = preset.effects.map(e => ({
-                ...e,
-                id: crypto.randomUUID()
-            }));
-            setEffects(newEffects);
+            setEffects(prevEffects => {
+                const lockedEffects = prevEffects.filter(e => e.isLocked);
+
+                // New effects from preset (regenerate IDs)
+                const presetEffects = preset.effects.map(e => ({
+                    ...e,
+                    id: crypto.randomUUID()
+                }));
+
+                // Combine: Locked at TOP, then Preset
+                // Note: If a locked effect is ALSO in the preset, do we duplicate?
+                // Standard behavior: separate concepts. Locked effects are persistent overrides. 
+                // Preset replaces everything else.
+
+                return [...lockedEffects, ...presetEffects];
+            });
             setActivePresetId(presetId);
         }
     }, [presets, setEffects]);
