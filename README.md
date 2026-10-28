@@ -1,8 +1,8 @@
 # 🎨 Palette Master
 
-A high-performance, browser-based image processing platform designed for glitch art, dithering, palette extraction, and creative pixel manipulation experiments. Built with low-level pixel manipulation algorithms and a modern React interface.
+A high-performance, browser-based image processing platform designed for glitch art, dithering, palette extraction, and creative pixel manipulation experiments. Built with low-level pixel manipulation algorithms, Web Workers, and a modern React interface.
 
-### 🌐 Try Online: [https://milospavlovic7.github.io/palette-master-AntygravityAIAgent/](https://milospavlovic7.github.io/palette-master-AntygravityAIAgent/)
+### 🌐 Try Online: [https://milospavlovic7.github.io/palette-master-AntigravityAIAgent/](https://milospavlovic7.github.io/palette-master-AntigravityAIAgent/)
 *(Mirror: [palette-master-antigravityaiproject.netlify.app](https://palette-master-antigravityaiproject.netlify.app))*
 
 ---
@@ -18,7 +18,7 @@ A high-performance, browser-based image processing platform designed for glitch 
 ### 2. Composable Real-Time Effect Chain
 Stack multiple modular image effects, reorder them dynamically, and fine-tune parameters in real time:
 - **Advanced Dithering**: Floyd-Steinberg, Atkinson, Sierra, Burkes, Jarvis-Judice-Ninke, Ordered (Bayer 2x2, 4x4, 8x8), Blue Noise, and Random Noise.
-- **Glitch & Datamosh Art**:
+- **Glitch Art & Datamosh**:
   - **Pixel Sorting**: Sort pixels by luminance, hue, or saturation along horizontal or vertical axes.
   - **Datamosh**: Emulate lossy video compression keyframe drops and artifacting.
   - **Digital Glitch**: RGB channel shift, scanline dispersion, and sync corruption.
@@ -52,7 +52,7 @@ Stack multiple modular image effects, reorder them dynamically, and fine-tune pa
 
 ### Option 1: Play Online (No installation required)
 Launch directly in your browser:  
-👉 **[https://milospavlovic7.github.io/palette-master-AntygravityAIAgent/](https://milospavlovic7.github.io/palette-master-AntygravityAIAgent/)**
+👉 **[https://milospavlovic7.github.io/palette-master-AntigravityAIAgent/](https://milospavlovic7.github.io/palette-master-AntigravityAIAgent/)**
 
 ### Option 2: Run Standalone Offline
 Open `dist/index.html` directly in any modern web browser.
@@ -60,8 +60,8 @@ Open `dist/index.html` directly in any modern web browser.
 ### Option 3: Local Development
 ```bash
 # Clone the repository
-git clone https://github.com/milospavlovic7/palette-master-AntygravityAIAgent.git
-cd palette-master-AntygravityAIAgent
+git clone https://github.com/milospavlovic7/palette-master-AntigravityAIAgent.git
+cd palette-master-AntigravityAIAgent
 
 # Install dependencies
 npm install
@@ -79,11 +79,11 @@ Generates a zero-dependency, single-file bundle at `dist/index.html`.
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack & Architecture
 
 - **Framework**: [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
 - **Bundler**: [Vite](https://vitejs.dev/) + [`vite-plugin-singlefile`](https://github.com/richardtallent/vite-plugin-singlefile)
-- **Engine**: Pure client-side HTML5 Canvas 2D & TypedArray Pixel Buffer processing
+- **Engine**: Pure client-side HTML5 Canvas 2D & Web Workers (`imageWorker.ts`) for off-main-thread pixel processing
 - **Styling**: Modern CSS Custom Properties & responsive layout
 - **Architecture**: Antigravity AI Agent pair programming experiment
 
